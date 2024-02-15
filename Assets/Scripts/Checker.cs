@@ -8,6 +8,7 @@ public class Checker : MonoBehaviour
     [SerializeField] private string[] letters;
     [SerializeField] private int direction_Ray = 1;
     [SerializeField] private WinManager winManager;
+    [SerializeField] private float lenght = 5f;
 
     private List<TMP_Text> texts;
     private bool runOnce = true;
@@ -26,26 +27,14 @@ public class Checker : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, direction_Ray * (transform.position + transform.right * 10f));
+        Gizmos.DrawLine(transform.position, transform.position + (direction_Ray * transform.right) * lenght);
     }
 
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            texts.Clear();
-            RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position,transform.position + (direction_Ray * transform.right), 10f);
-            foreach (RaycastHit2D h in hit)
-            {
-                TMP_Text text = h.transform.GetComponent<TMP_Text>();
-
-                if (text != null)
-                {
-                    animatorFromHit = text.GetComponent<Animator>();
-                    objectHit = h.transform.gameObject;
-                    texts.Add(text);
-                }
-            }
+            Invoke("Check", 0.3f);
         }
 
         bool value = false;
@@ -68,6 +57,23 @@ public class Checker : MonoBehaviour
             animator.enabled = true;
             animatorFromHit.enabled = true;
             runOnce = false;
+        }
+    }
+
+    private void Check()
+    {
+        texts.Clear();
+        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, transform.position + (direction_Ray * transform.right), lenght);
+        foreach (RaycastHit2D h in hit)
+        {
+            TMP_Text text = h.transform.GetComponent<TMP_Text>();
+
+            if (text != null)
+            {
+                animatorFromHit = text.GetComponent<Animator>();
+                objectHit = h.transform.gameObject;
+                texts.Add(text);
+            }
         }
     }
 

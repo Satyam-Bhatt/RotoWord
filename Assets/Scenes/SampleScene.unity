@@ -717,6 +717,7 @@ MonoBehaviour:
   - O
   direction_Ray: -1
   winManager: {fileID: 1139151382}
+  lenght: 3
 --- !u!114 &520795087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,6 +892,7 @@ MonoBehaviour:
   - T
   direction_Ray: 1
   winManager: {fileID: 1139151382}
+  lenght: 3
 --- !u!114 &1049759954
 MonoBehaviour:
   m_ObjectHideFlags: 0
