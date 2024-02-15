@@ -6,6 +6,7 @@ using TMPro;
 public class Checker : MonoBehaviour
 {
     [SerializeField] private string[] letters;
+    [SerializeField] private int direction_Ray = 1;
 
     private List<TMP_Text> texts;
 
@@ -17,7 +18,7 @@ public class Checker : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.right * 10f);
+        Gizmos.DrawLine(transform.position, direction_Ray * (transform.position + transform.right * 10f));
     }
 
     private void Update()
@@ -25,7 +26,7 @@ public class Checker : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             texts.Clear();
-            RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, transform.right, 10f);
+            RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position,transform.position + (direction_Ray * transform.right), 10f);
             foreach (RaycastHit2D h in hit)
             {
                 TMP_Text text = h.transform.GetComponent<TMP_Text>();
@@ -39,7 +40,9 @@ public class Checker : MonoBehaviour
 
         bool value = false;
 
-        for(int i = 0; i < texts.Count; i++)
+        Debug.Log(texts.Count);
+
+        for (int i = 0; i < texts.Count; i++)
         {
             if (texts.Count != letters.Length) break;
 
