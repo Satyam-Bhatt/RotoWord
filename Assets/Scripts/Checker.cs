@@ -7,12 +7,15 @@ public class Checker : MonoBehaviour
 {
     [SerializeField] private string[] letters;
     [SerializeField] private int direction_Ray = 1;
+    [SerializeField] private WinManager winManager;
 
     private List<TMP_Text> texts;
+    private bool runOnce = true;
 
     private void Start()
     {
         texts = new List<TMP_Text>();
+        winManager.win_Counter += 1;
     }
 
     private void OnDrawGizmos()
@@ -40,8 +43,6 @@ public class Checker : MonoBehaviour
 
         bool value = false;
 
-        Debug.Log(texts.Count);
-
         for (int i = 0; i < texts.Count; i++)
         {
             if (texts.Count != letters.Length) break;
@@ -54,9 +55,10 @@ public class Checker : MonoBehaviour
             }
         }
 
-        if (value == true)
+        if (value == true && runOnce)
         {
-            Debug.Log("Value Found");
+            winManager.win_Counter -= 1;
+            runOnce = false;
         }
     }
 }
