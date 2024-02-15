@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 27293595}
   - component: {fileID: 27293594}
   - component: {fileID: 27293593}
+  - component: {fileID: 27293596}
   m_Layer: 0
   m_Name: Outer Letter_1
   m_TagString: Untagged
@@ -285,6 +286,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27293591}
   m_CullTransparentMesh: 1
+--- !u!95 &27293596
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27293591}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1caf16ddb8155145b6a0eda60c5080b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &60984167
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +387,7 @@ GameObject:
   - component: {fileID: 134195580}
   - component: {fileID: 134195579}
   - component: {fileID: 134195578}
+  - component: {fileID: 134195581}
   m_Layer: 0
   m_Name: Outer Letter_2
   m_TagString: Untagged
@@ -515,6 +538,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134195576}
   m_CullTransparentMesh: 1
+--- !u!95 &134195581
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134195576}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1caf16ddb8155145b6a0eda60c5080b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &502922133
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +673,7 @@ GameObject:
   - component: {fileID: 520795088}
   - component: {fileID: 520795087}
   - component: {fileID: 520795086}
+  - component: {fileID: 520795089}
   m_Layer: 0
   m_Name: Inner Letter_2
   m_TagString: Untagged
@@ -769,6 +814,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520795084}
   m_CullTransparentMesh: 1
+--- !u!95 &520795089
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520795084}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1248fb8fe65fe104f9c13dce236fe35c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1049759951
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +847,7 @@ GameObject:
   - component: {fileID: 1049759955}
   - component: {fileID: 1049759954}
   - component: {fileID: 1049759953}
+  - component: {fileID: 1049759956}
   m_Layer: 0
   m_Name: Inner Letter_1
   m_TagString: Untagged
@@ -921,6 +988,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049759951}
   m_CullTransparentMesh: 1
+--- !u!95 &1049759956
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049759951}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1248fb8fe65fe104f9c13dce236fe35c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1139151379
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,11 +11,16 @@ public class Checker : MonoBehaviour
 
     private List<TMP_Text> texts;
     private bool runOnce = true;
+    private Animator animator;
+    private Animator animatorFromHit;
+    private GameObject objectHit;
 
     private void Start()
     {
         texts = new List<TMP_Text>();
         winManager.win_Counter += 1;
+        animator = GetComponent<Animator>();
+        animator.enabled = false;
     }
 
     private void OnDrawGizmos()
@@ -36,6 +41,8 @@ public class Checker : MonoBehaviour
 
                 if (text != null)
                 {
+                    animatorFromHit = text.GetComponent<Animator>();
+                    objectHit = h.transform.gameObject;
                     texts.Add(text);
                 }
             }
@@ -58,7 +65,16 @@ public class Checker : MonoBehaviour
         if (value == true && runOnce)
         {
             winManager.win_Counter -= 1;
+            animator.enabled = true;
+            animatorFromHit.enabled = true;
             runOnce = false;
         }
+    }
+
+    public void DestroyThis()
+    {
+        Debug.Log("Destroyed");
+        Destroy(objectHit);
+        Destroy(gameObject);
     }
 }
