@@ -33,9 +33,6 @@ public class Rotator : MonoBehaviour
         { 
             transform_col = null;
         }
-
-        Debug.Log(transform_col.gameObject.name);
-
     }
 
     private float AngleOffsetCalculation(Vector2 direction, Transform transform_1)
