@@ -58,6 +58,20 @@ public class Checker : MonoBehaviour
             animatorFromHit.enabled = true;
             runOnce = false;
         }
+
+        Transform parent = transform.parent.transform.parent;
+        int angle = Mathf.RoundToInt(parent.transform.rotation.eulerAngles.z);
+
+        if (angle == 0 || angle == 180)
+        {
+            Quaternion To_rot = Quaternion.Euler(0, 0, 45);
+            transform.rotation = Quaternion.Slerp(transform.rotation, To_rot, 20f * Time.deltaTime);
+        }
+        else if(angle == 90 || angle == 270)
+        {
+            Quaternion To_rot = Quaternion.Euler(0, 0, 315);
+            transform.rotation = Quaternion.Slerp(transform.rotation, To_rot, 20f * Time.deltaTime);
+        }
     }
 
     private void Check()
