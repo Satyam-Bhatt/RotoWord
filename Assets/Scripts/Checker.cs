@@ -73,7 +73,6 @@ public class Checker : MonoBehaviour
 
     public void DestroyThis()
     {
-        Debug.Log("Destroyed");
         Destroy(objectHit);
         Destroy(gameObject);
     }
