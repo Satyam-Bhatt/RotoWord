@@ -6,7 +6,7 @@ public class LetterCollectionAnimation : MonoBehaviour
 {
     public bool isPlaying = false;
 
-    [SerializeField] private Vector2 newPosition = Vector2.zero;
+    [SerializeField] private Transform newPosition;
 
     private void Start()
     {
@@ -17,10 +17,10 @@ public class LetterCollectionAnimation : MonoBehaviour
     {
         if (isPlaying)
         {
-            transform.position = Vector2.Lerp(transform.position, newPosition, 5 * Time.deltaTime);
+            transform.position = Vector2.Lerp(transform.position, newPosition.position, 5 * Time.deltaTime);
 
             Quaternion targetRotation = Quaternion.Euler(0, 0, 0);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 5 * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 5 * Time.deltaTime);
         }
     }
 }
