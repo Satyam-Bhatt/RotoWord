@@ -62,15 +62,17 @@ public class Checker : MonoBehaviour
         Transform parent = transform.parent.transform.parent;
         int angle = Mathf.RoundToInt(parent.transform.rotation.eulerAngles.z);
 
-        if (angle == 0 || angle == 180)
+        if(angle > 0 && angle <= 90)
         {
-            Quaternion To_rot = Quaternion.Euler(0, 0, 45);
-            transform.rotation = Quaternion.Slerp(transform.rotation, To_rot, 20f * Time.deltaTime);
+            float angle_Complex = parent.transform.rotation.eulerAngles.z / 90;
+            float zAngle_Overtime = 45 - 90 * angle_Complex;
+            transform.rotation = Quaternion.Euler(0, 0, zAngle_Overtime);
         }
-        else if(angle == 90 || angle == 270)
+        else if(angle-360 > -180 && angle - 360 <= -90)
         {
-            Quaternion To_rot = Quaternion.Euler(0, 0, 315);
-            transform.rotation = Quaternion.Slerp(transform.rotation, To_rot, 20f * Time.deltaTime);
+            float angle_Complex = (parent.transform.rotation.eulerAngles.z - 180) / 90;
+            float zAngle_Overtime = -315 - 90 * angle_Complex;
+            transform.rotation = Quaternion.Euler(0, 0, zAngle_Overtime);
         }
     }
 
