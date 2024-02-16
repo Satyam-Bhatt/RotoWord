@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestAnimationScript : MonoBehaviour
+public class LetterCollectionAnimation : MonoBehaviour
 {
-    public bool isPlaying = false;    
+    public bool isPlaying = false;
 
     [SerializeField] private Vector2 newPosition = Vector2.zero;
 

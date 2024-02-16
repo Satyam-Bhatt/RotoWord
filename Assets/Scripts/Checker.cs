@@ -10,21 +10,20 @@ public class Checker : MonoBehaviour
     [SerializeField] private WinManager winManager;
     [SerializeField] private float lenght = 5f;
 
-    private List<TMP_Text> texts;
+    private List<TMP_Text> texts = new List<TMP_Text>();
     private bool runOnce = true;
     private Animator animator;
-    
+    private LetterCollectionAnimation letterCollectionAnimation;
+
     //Hit Storage Area
-    private List<Animator> animatorFromHit;
-    private List<GameObject> objectHit;
+    private List<Animator> animatorFromHit = new List<Animator>();
+    private List<GameObject> objectHit = new List<GameObject>();
 
     private void Start()
-    {
-        texts = new List<TMP_Text>();
-        animatorFromHit = new List<Animator>();
-        objectHit = new List<GameObject>();
+    { 
         winManager.win_Counter += 1;
         animator = GetComponentInChildren<Animator>();
+        letterCollectionAnimation = GetComponentInChildren<LetterCollectionAnimation>();
         animator.enabled = false;
     }
 
@@ -55,12 +54,18 @@ public class Checker : MonoBehaviour
             }
         }
 
+
+
         if (value == true && runOnce)
         {
+            
             winManager.win_Counter -= 1;
             animator.enabled = true;
-            foreach (Animator a in animatorFromHit) { a.enabled = true; }
-            Invoke("DestroyThis", 0.7f);
+            //foreach (Animator a in animatorFromHit) { a.enabled = true; }
+            //Invoke("DestroyThis", 0.7f);
+
+            //if (letterCollectionAnimation != null) letterCollectionAnimation.isPlaying = true;
+
             runOnce = false;
         }
 
@@ -74,6 +79,7 @@ public class Checker : MonoBehaviour
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, transform.position + (direction_Ray * transform.right), lenght);
         foreach (RaycastHit2D h in hit)
         {
+            Debug.Log(h.transform.gameObject.name);
             TMP_Text text = h.transform.GetComponent<TMP_Text>();
 
             if (text != null)
