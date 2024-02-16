@@ -59,21 +59,7 @@ public class Checker : MonoBehaviour
             runOnce = false;
         }
 
-        Transform parent = transform.parent.transform.parent;
-        int angle = Mathf.RoundToInt(parent.transform.rotation.eulerAngles.z);
 
-        if(angle > 0 && angle <= 90)
-        {
-            float angle_Complex = parent.transform.rotation.eulerAngles.z / 90;
-            float zAngle_Overtime = 45 - 90 * angle_Complex;
-            transform.rotation = Quaternion.Euler(0, 0, zAngle_Overtime);
-        }
-        else if(angle-360 > -180 && angle - 360 <= -90)
-        {
-            float angle_Complex = (parent.transform.rotation.eulerAngles.z - 180) / 90;
-            float zAngle_Overtime = -315 - 90 * angle_Complex;
-            transform.rotation = Quaternion.Euler(0, 0, zAngle_Overtime);
-        }
     }
 
     private void Check()
