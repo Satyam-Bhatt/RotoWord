@@ -20,7 +20,7 @@ public class Checker : MonoBehaviour
     {
         texts = new List<TMP_Text>();
         winManager.win_Counter += 1;
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         animator.enabled = false;
     }
 
@@ -56,6 +56,7 @@ public class Checker : MonoBehaviour
             winManager.win_Counter -= 1;
             animator.enabled = true;
             animatorFromHit.enabled = true;
+            Invoke("DestroyThis", 0.7f);
             runOnce = false;
         }
 
