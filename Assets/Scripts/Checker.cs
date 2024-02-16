@@ -13,12 +13,16 @@ public class Checker : MonoBehaviour
     private List<TMP_Text> texts;
     private bool runOnce = true;
     private Animator animator;
-    private Animator animatorFromHit;
-    private GameObject objectHit;
+    
+    //Hit Storage Area
+    private List<Animator> animatorFromHit;
+    private List<GameObject> objectHit;
 
     private void Start()
     {
         texts = new List<TMP_Text>();
+        animatorFromHit = new List<Animator>();
+        objectHit = new List<GameObject>();
         winManager.win_Counter += 1;
         animator = GetComponentInChildren<Animator>();
         animator.enabled = false;
@@ -34,7 +38,7 @@ public class Checker : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            Invoke("Check", 0.3f);
+            Invoke("Check", 0.3f); //change value if you want to change the delay in checking the right letter
         }
 
         bool value = false;
@@ -55,7 +59,7 @@ public class Checker : MonoBehaviour
         {
             winManager.win_Counter -= 1;
             animator.enabled = true;
-            animatorFromHit.enabled = true;
+            foreach (Animator a in animatorFromHit) { a.enabled = true; }
             Invoke("DestroyThis", 0.7f);
             runOnce = false;
         }
@@ -66,6 +70,8 @@ public class Checker : MonoBehaviour
     private void Check()
     {
         texts.Clear();
+        objectHit.Clear();
+        animatorFromHit.Clear();
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, transform.position + (direction_Ray * transform.right), lenght);
         foreach (RaycastHit2D h in hit)
         {
@@ -73,8 +79,8 @@ public class Checker : MonoBehaviour
 
             if (text != null)
             {
-                animatorFromHit = text.GetComponent<Animator>();
-                objectHit = h.transform.gameObject;
+                animatorFromHit.Add(text.GetComponent<Animator>());
+                objectHit.Add(h.transform.gameObject);
                 texts.Add(text);
             }
         }
@@ -82,7 +88,7 @@ public class Checker : MonoBehaviour
 
     public void DestroyThis()
     {
-        Destroy(objectHit);
+        foreach(GameObject o in objectHit) { Destroy(o); }
         Destroy(gameObject);
     }
 }
