@@ -14,7 +14,7 @@ public class Rotator : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector3.forward);
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector3.forward, 0f, 5);
             if(hit.collider != null)
             {
                 transform_col = hit.collider.transform;

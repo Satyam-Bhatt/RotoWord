@@ -8,7 +8,6 @@ public class LetterRotation : MonoBehaviour
     [SerializeField] private bool isPresent_1st_3rd_Quadrant = false;
     [SerializeField] private Transform parent;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -36,7 +35,6 @@ public class LetterRotation : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, RotationCalculator(parent.transform.rotation.eulerAngles.z, 270, 45));
             }
         }
-
     }
 
     private float RotationCalculator(float currentAngle,float quadrantInitialAngle, float letterAngle)
