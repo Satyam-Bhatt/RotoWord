@@ -63,6 +63,7 @@ public class Checker : MonoBehaviour
             Invoke("DestroyThis", 0.7f);
             runOnce = false;
         }
+
     }
 
     private void Check()
