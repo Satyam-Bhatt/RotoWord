@@ -25,7 +25,7 @@ public class LetterCollectionAnimation : MonoBehaviour
         if (isPlaying)
         {
             letterRotation.enabled = false;
-            //rectTransform.pivot = new Vector2(0.5f, 0.0f);
+            rectTransform.pivot = new Vector2(0.5f, 0.0f);
 
             transform.position = Vector2.Lerp(transform.position, newPosition.position, 5 * Time.deltaTime);
 
