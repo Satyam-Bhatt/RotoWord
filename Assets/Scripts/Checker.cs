@@ -12,18 +12,15 @@ public class Checker : MonoBehaviour
 
     private List<TMP_Text> texts = new List<TMP_Text>();
     private bool runOnce = true;
-    private Animator animator;
     private LetterCollectionAnimation letterCollectionAnimation;
 
     //Hit Storage Area
-    private List<Animator> animatorFromHit = new List<Animator>();
     private List<GameObject> objectHit = new List<GameObject>();
     private List<LetterCollectionAnimation> letterCollectionAnimationFromHit = new List<LetterCollectionAnimation>();
 
     private void Start()
     { 
         winManager.win_Counter += 1;
-        animator = GetComponentInChildren<Animator>();
         letterCollectionAnimation = GetComponentInChildren<LetterCollectionAnimation>();
     }
 
@@ -60,13 +57,9 @@ public class Checker : MonoBehaviour
         {
             
             winManager.win_Counter -= 1;
-            //animator.enabled = true;
-            //foreach (Animator a in animatorFromHit) { a.enabled = true; }
-            //Invoke("DestroyThis", 0.7f);
-
             letterCollectionAnimation.isPlaying = true;
             foreach (LetterCollectionAnimation a in letterCollectionAnimationFromHit) { a.isPlaying = true; }
-
+            Invoke("DestroyThis", 2f);
             runOnce = false;
         }
 
@@ -76,7 +69,6 @@ public class Checker : MonoBehaviour
     {
         texts.Clear();
         objectHit.Clear();
-        animatorFromHit.Clear();
         letterCollectionAnimationFromHit.Clear();
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, transform.localPosition + (direction_Ray * transform.right), lenght);
         foreach (RaycastHit2D h in hit)
@@ -85,7 +77,6 @@ public class Checker : MonoBehaviour
 
             if (text != null)
             {
-                animatorFromHit.Add(text.GetComponent<Animator>());
                 objectHit.Add(h.transform.gameObject);
                 letterCollectionAnimationFromHit.Add(h.transform.GetComponent<LetterCollectionAnimation>());
                 texts.Add(text);
