@@ -6,10 +6,18 @@ public class Rotator : MonoBehaviour
 {
     private float angleOffset;
     private Transform transform_col = null;
+    private WinManager winManager = null;
+
+    private void Awake()
+    {
+        winManager = GetComponent<WinManager>();
+    }
 
     // Update is called once per frame
     void Update()
     {
+        if(winManager.isRunning) return;
+
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (Input.GetKeyDown(KeyCode.Mouse0))

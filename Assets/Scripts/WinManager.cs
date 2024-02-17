@@ -5,17 +5,11 @@ using UnityEngine;
 
 public class WinManager : MonoBehaviour
 {
-    public int win_Counter = 0;
+    [HideInInspector] public int win_Counter = 0;
+    [HideInInspector] public List<Checker> checkers = new List<Checker>();
+    [HideInInspector] public float timeCounter = 0f;
+    [HideInInspector] public bool isRunning = false;
 
-    public List<Checker> checkers = new List<Checker>();
-
-    public float timeCounter = -0.1f;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -32,11 +26,13 @@ public class WinManager : MonoBehaviour
         {
             await AnimationRoutine();
         }
+        else isRunning = false;
     }
 
     public async Task AnimationRoutine()
     {
-        timeCounter = Time.time + 1.5f;
+        timeCounter = Time.time + 1.5f; //to control the amount of time next word comes and previous one is destroyed
+        isRunning = true;
         while (Time.time < timeCounter)
         {
             checkers[0].letterCollectionAnimation.isPlaying = true;
@@ -50,6 +46,9 @@ public class WinManager : MonoBehaviour
             checkers.Remove(checkers[0]);
             testCase();
         }
-        else { Debug.Log("Stop Interaction"); }
+        else {
+            Debug.Log("Stopped");
+            isRunning = false; 
+        }
     }
 }

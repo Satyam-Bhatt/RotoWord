@@ -13,11 +13,13 @@ public class Checker : MonoBehaviour
     private List<TMP_Text> texts = new List<TMP_Text>();
     private bool runOnce = true;
 
+    [HideInInspector]
     public LetterCollectionAnimation letterCollectionAnimation;
 
     //Hit Storage Area
     private List<GameObject> objectHit = new List<GameObject>();
-    
+
+    [HideInInspector]
     public List<LetterCollectionAnimation> letterCollectionAnimationFromHit = new List<LetterCollectionAnimation>();
 
     private void Start()
@@ -57,12 +59,7 @@ public class Checker : MonoBehaviour
         {            
             winManager.win_Counter -= 1;
             winManager.checkers.Add(this);
-            //letterCollectionAnimation.isPlaying = true;
-            //foreach (LetterCollectionAnimation a in letterCollectionAnimationFromHit) { a.isPlaying = true; }
-            //Invoke("DestroyThis", 2f);
-
             winManager.testCase();
-
             runOnce = false;
         }
     }
