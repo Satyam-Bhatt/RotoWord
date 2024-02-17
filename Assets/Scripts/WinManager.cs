@@ -10,7 +10,6 @@ public class WinManager : MonoBehaviour
     [HideInInspector] public float timeCounter = 0f;
     [HideInInspector] public bool isRunning = false;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -20,7 +19,7 @@ public class WinManager : MonoBehaviour
         }
     }
 
-    public async void testCase()
+    public async void AnimationRoutineCaller()
     {
         if(checkers.Count > 0)
         {
@@ -44,7 +43,7 @@ public class WinManager : MonoBehaviour
         {
             checkers[0].DestroyThis();
             checkers.Remove(checkers[0]);
-            testCase();
+            AnimationRoutineCaller();
         }
         else {
             Debug.Log("Stopped");

@@ -59,7 +59,7 @@ public class Checker : MonoBehaviour
         {            
             winManager.win_Counter -= 1;
             winManager.checkers.Add(this);
-            winManager.testCase();
+            winManager.AnimationRoutineCaller();
             runOnce = false;
         }
     }
