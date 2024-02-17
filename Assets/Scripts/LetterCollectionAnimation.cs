@@ -9,10 +9,12 @@ public class LetterCollectionAnimation : MonoBehaviour
     [SerializeField] private Transform newPosition;
 
     private Animator animator;
+    private LetterRotation letterRotation;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        letterRotation = GetComponent<LetterRotation>();
     }
     // Update is called once per frame
     void Update()
@@ -20,6 +22,7 @@ public class LetterCollectionAnimation : MonoBehaviour
 
         if (isPlaying)
         {
+            letterRotation.enabled = false;
             transform.position = Vector2.Lerp(transform.position, newPosition.position, 5 * Time.deltaTime);
 
             Quaternion targetRotation = Quaternion.Euler(0, 0, 0);
