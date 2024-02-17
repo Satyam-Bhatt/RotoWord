@@ -23,7 +23,7 @@ public class Rotator : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) && transform_col != null)
         {
             Vector2 direction = (mousePosition - transform_col.position).normalized;
             RotateObject(direction, transform_col);
