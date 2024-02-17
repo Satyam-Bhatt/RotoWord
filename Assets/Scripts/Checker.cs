@@ -25,7 +25,6 @@ public class Checker : MonoBehaviour
         winManager.win_Counter += 1;
         animator = GetComponentInChildren<Animator>();
         letterCollectionAnimation = GetComponentInChildren<LetterCollectionAnimation>();
-        animator.enabled = false;
     }
 
     private void OnDrawGizmos()
@@ -82,7 +81,6 @@ public class Checker : MonoBehaviour
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, transform.localPosition + (direction_Ray * transform.right), lenght);
         foreach (RaycastHit2D h in hit)
         {
-            Debug.Log(h.transform.gameObject.name);
             TMP_Text text = h.transform.GetComponent<TMP_Text>();
 
             if (text != null)
