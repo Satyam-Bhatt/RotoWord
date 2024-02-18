@@ -7,6 +7,8 @@ public class LetterCollectionAnimation : MonoBehaviour
     [HideInInspector] public bool isPlaying = false;
 
     [SerializeField] private Transform newPosition;
+    [SerializeField] private bool flip = false;
+
     public bool isPersistent;
 
     private Animator animator;
@@ -33,6 +35,13 @@ public class LetterCollectionAnimation : MonoBehaviour
                 newLetter.GetComponent<LetterCollectionAnimation>().isPersistent = true;
                 newLetter.transform.SetParent(thisLetter.transform.parent);
                 isPersistent = false;
+            }
+            if (flip)
+            {
+                Transform parent = transform.parent;
+                if(parent!= null) parent.transform.localScale = new Vector3(parent.transform.localScale.x * -1, parent.transform.localScale.y, parent.transform.localScale.z);
+                else Debug.Log("Parent is null");
+                flip = false;
             }
             letterRotation.enabled = false;
             rectTransform.pivot = new Vector2(0.5f, 0.0f);
