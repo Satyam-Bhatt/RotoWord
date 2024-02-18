@@ -46,7 +46,6 @@ public class WinManager : MonoBehaviour
             AnimationRoutineCaller();
         }
         else {
-            Debug.Log("Stopped");
             isRunning = false; 
         }
     }
