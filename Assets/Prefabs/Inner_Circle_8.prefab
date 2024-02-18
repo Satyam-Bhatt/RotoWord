@@ -240,7 +240,7 @@ MonoBehaviour:
   letters:
   - A
   - P
-  direction_Ray: -2
+  direction_Ray: -1
   winManager: {fileID: 0}
   lenght: 3
   letterCollectionAnimation: {fileID: 0}
