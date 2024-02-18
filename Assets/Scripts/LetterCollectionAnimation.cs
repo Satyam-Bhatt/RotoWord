@@ -14,11 +14,14 @@ public class LetterCollectionAnimation : MonoBehaviour
     private Animator animator;
     private LetterRotation letterRotation;
     private RectTransform rectTransform;
+    private GameObject parent;
 
     private void Start()
     {
+        parent = transform.parent.gameObject;
         animator = GetComponent<Animator>();
-        letterRotation = GetComponent<LetterRotation>();
+        if(flip == false)  letterRotation = GetComponent<LetterRotation>();
+        else letterRotation = parent.GetComponent<LetterRotation>();
         rectTransform = GetComponent<RectTransform>();
     }
     // Update is called once per frame
@@ -38,7 +41,6 @@ public class LetterCollectionAnimation : MonoBehaviour
             }
             if (flip)
             {
-                Transform parent = transform.parent;
                 if(parent!= null) parent.transform.localScale = new Vector3(parent.transform.localScale.x * -1, parent.transform.localScale.y, parent.transform.localScale.z);
                 else Debug.Log("Parent is null");
                 flip = false;
