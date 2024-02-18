@@ -31,7 +31,7 @@ public class Checker : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + (direction_Ray * transform.right) * lenght);
+        Gizmos.DrawRay(transform.position,(direction_Ray * transform.right) * lenght);
     }
 
     private void Update()
@@ -69,7 +69,7 @@ public class Checker : MonoBehaviour
         texts.Clear();
         objectHit.Clear();
         letterCollectionAnimationFromHit.Clear();
-        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, transform.localPosition + (direction_Ray * transform.right), lenght);
+        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position,direction_Ray * transform.right, lenght);
         foreach (RaycastHit2D h in hit)
         {
             TMP_Text text = h.transform.GetComponent<TMP_Text>();

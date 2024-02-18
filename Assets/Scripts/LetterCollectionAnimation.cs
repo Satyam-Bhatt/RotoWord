@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class LetterCollectionAnimation : MonoBehaviour
 {
-    public bool isPlaying = false;
+    [HideInInspector] public bool isPlaying = false;
 
     [SerializeField] private Transform newPosition;
+    public bool isPersistent;
 
     private Animator animator;
     private LetterRotation letterRotation;
@@ -24,6 +25,15 @@ public class LetterCollectionAnimation : MonoBehaviour
 
         if (isPlaying)
         {
+            if (isPersistent)
+            {
+                GameObject thisLetter = transform.gameObject;
+                GameObject newLetter = Instantiate(thisLetter, transform.position, Quaternion.identity);
+                newLetter.GetComponent<LetterCollectionAnimation>().isPlaying = false;
+                newLetter.GetComponent<LetterCollectionAnimation>().isPersistent = true;
+                newLetter.transform.SetParent(thisLetter.transform.parent);
+                isPersistent = false;
+            }
             letterRotation.enabled = false;
             rectTransform.pivot = new Vector2(0.5f, 0.0f);
 
