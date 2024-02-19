@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LetterCollectionAnimation : MonoBehaviour
@@ -41,8 +42,9 @@ public class LetterCollectionAnimation : MonoBehaviour
             }
             if (flip)
             {
-                if(parent!= null) parent.transform.localScale = new Vector3(parent.transform.localScale.x * -1, parent.transform.localScale.y, parent.transform.localScale.z);
-                else Debug.Log("Parent is null");
+                GameObject thisLetter2 = transform.gameObject;
+                TMP_Text text = thisLetter2.GetComponent<TMP_Text>();
+                if (text != null) { text.isRightToLeftText = true; }
                 flip = false;
             }
             letterRotation.enabled = false;
