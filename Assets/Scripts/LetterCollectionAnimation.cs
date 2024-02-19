@@ -34,7 +34,7 @@ public class LetterCollectionAnimation : MonoBehaviour
             if (isPersistent)
             {
                 GameObject thisLetter = transform.gameObject;
-                GameObject newLetter = Instantiate(thisLetter, transform.position, Quaternion.identity);
+                GameObject newLetter = Instantiate(thisLetter, transform.position, transform.rotation);
                 newLetter.GetComponent<LetterCollectionAnimation>().isPlaying = false;
                 newLetter.GetComponent<LetterCollectionAnimation>().isPersistent = true;
                 newLetter.transform.SetParent(thisLetter.transform.parent);
