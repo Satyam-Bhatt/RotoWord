@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WinManager : MonoBehaviour
 {
-     public int win_Counter = 0;
+    [HideInInspector] public int win_Counter = 0;
     [HideInInspector] public List<Checker> checkers = new List<Checker>();
     [HideInInspector] public float timeCounter = 0f;
     [HideInInspector] public bool isRunning = false;
@@ -14,7 +14,6 @@ public class WinManager : MonoBehaviour
     [SerializeField] private Transform[] newPositions; 
 
     private bool moveToPosition = false;
-
     private int levelCounter = 1;
 
     void Start()
