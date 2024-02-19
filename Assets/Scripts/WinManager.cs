@@ -33,7 +33,7 @@ public class WinManager : MonoBehaviour
             if(levelCounter <= levels.Length - 1)
             {
                 levels[levelCounter].SetActive(true);
-                Invoke("LevelDisabler_Enabler", 1.5f);
+                Invoke("LevelDisabler_Enabler", 1.8f); //Time to switch between the next level
             }
             else
             {
@@ -69,11 +69,18 @@ public class WinManager : MonoBehaviour
 
     public async Task AnimationRoutine()
     {
-        timeCounter = Time.time + 1.5f; //to control the amount of time next word comes and previous one is destroyed
+        timeCounter = Time.time + 2f; //to control the amount of time next word comes and previous one is destroyed
         isRunning = true;
         while (Time.time < timeCounter)
         {
-            checkers[0].letterCollectionAnimation.isPlaying = true;
+            if(checkers[0].letterCollectionAnimation != null)
+            {
+                checkers[0].letterCollectionAnimation.isPlaying = true;
+            }
+            else
+            {
+                checkers[0].transform.parent.gameObject.GetComponent<LetterCollectionAnimation>().isPlaying = true;
+            }
             foreach (LetterCollectionAnimation l in checkers[0].letterCollectionAnimationFromHit) { l.isPlaying = true; }
             await Task.Yield();
         }
