@@ -5,18 +5,57 @@ using UnityEngine;
 
 public class WinManager : MonoBehaviour
 {
-    [HideInInspector] public int win_Counter = 0;
+     public int win_Counter = 0;
     [HideInInspector] public List<Checker> checkers = new List<Checker>();
     [HideInInspector] public float timeCounter = 0f;
     [HideInInspector] public bool isRunning = false;
+
+    [SerializeField] private GameObject[] levels;
+    [SerializeField] private Transform[] newPositions; 
+
+    private bool moveToPosition = false;
+
+    private int levelCounter = 1;
+
+    void Start()
+    {
+        for(int i = 1; i < levels.Length; i++)
+        {
+            levels[i].SetActive(false);
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (win_Counter == 0)
         {
-            Debug.Log("You won!");
+            if(levelCounter <= levels.Length - 1)
+            {
+                levels[levelCounter].SetActive(true);
+                Invoke("LevelDisabler_Enabler", 1.5f);
+            }
+            else
+            {
+                Debug.Log("All Levels Cleared");
+            }
         }
+
+        if (moveToPosition)
+        {
+            levels[levelCounter - 1].transform.position = Vector2.Lerp(levels[levelCounter - 1].transform.position, newPositions[0].position, 5 * Time.deltaTime);
+            levels[levelCounter].transform.position = Vector2.Lerp(levels[levelCounter].transform.position, newPositions[1].position, 5 * Time.deltaTime);
+            if(Vector2.Distance(newPositions[0].position, levels[levelCounter - 1].transform.position) < 0.1f && Vector2.Distance(newPositions[1].position, levels[levelCounter].transform.position) < 0.1f)
+            {
+                moveToPosition = false;
+                levelCounter++;
+            }
+        }
+    }
+
+    private void LevelDisabler_Enabler()
+    {
+        moveToPosition = true;
     }
 
     public async void AnimationRoutineCaller()
