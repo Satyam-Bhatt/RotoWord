@@ -9,9 +9,8 @@ public class RotateOtherCircle : MonoBehaviour
     private RaycastHit2D hit;
     private float angleOffset;
 
-    private void Start()
-    {
-    }
+    //---------------------- If the Circle does not rotate after adding the code below ----------------------
+    //|_|_|_|_|_|_|_|_|_|_|_| Add the "InfluentialCircle" Tag |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
 
     private void Update()
     {
