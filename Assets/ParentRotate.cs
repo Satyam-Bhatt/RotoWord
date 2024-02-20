@@ -42,7 +42,7 @@ public class ParentRotate : MonoBehaviour
             isAutoRotating = true;
         }
 
-        if (isAutoRotating && transform.rotation == autoRotator.newRot)
+        if (isAutoRotating && transform.rotation == autoRotator.newRot)//Causing bug in level 11
         {
             thingToParent.SetParent(parent);
             isAutoRotating = false;
