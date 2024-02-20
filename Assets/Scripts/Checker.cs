@@ -67,7 +67,7 @@ public class Checker : MonoBehaviour
     private void Check()
     {
         texts.Clear();
-        objectHit.Clear();
+        objectHit.Clear();// <-- this causes a bug where the letters are not destroyed if the player does not wait
         letterCollectionAnimationFromHit.Clear();
         RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position,direction_Ray * transform.right, lenght);
         foreach (RaycastHit2D h in hit)
@@ -85,7 +85,10 @@ public class Checker : MonoBehaviour
 
     public void DestroyThis()
     {
-        foreach(GameObject o in objectHit) { Destroy(o); }
+        foreach(GameObject o in objectHit) 
+        { 
+            Destroy(o); 
+        }
         Destroy(gameObject);
     }
 }

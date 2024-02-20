@@ -14,6 +14,7 @@ public class LetterCollectionAnimation : MonoBehaviour
 
     private Animator animator;
     private LetterRotation letterRotation;
+    private LetterRotation_8 LetterRotation_8;
     private RectTransform rectTransform;
     private GameObject parent;
 
@@ -21,8 +22,12 @@ public class LetterCollectionAnimation : MonoBehaviour
     {
         parent = transform.parent.gameObject;
         animator = GetComponent<Animator>();
+
         if(flip == false)  letterRotation = GetComponent<LetterRotation>();
         else letterRotation = parent.GetComponent<LetterRotation>();
+
+        LetterRotation_8 = GetComponent<LetterRotation_8>();
+
         rectTransform = GetComponent<RectTransform>();
     }
     // Update is called once per frame
@@ -47,7 +52,9 @@ public class LetterCollectionAnimation : MonoBehaviour
                 if (text != null) { text.isRightToLeftText = true; }
                 flip = false;
             }
-            letterRotation.enabled = false;
+            if(letterRotation != null) letterRotation.enabled = false;
+            if(LetterRotation_8 != null) LetterRotation_8.enabled = false;
+
             rectTransform.pivot = new Vector2(0.5f, 0.0f);
 
             transform.position = Vector2.Lerp(transform.position, newPosition.position, 5 * Time.deltaTime);
