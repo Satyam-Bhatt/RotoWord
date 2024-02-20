@@ -47,6 +47,8 @@ public class RotateOtherCircle : MonoBehaviour
         {
             autoRotator.isAutoRotating = true;
         }
+
+
     }
 
     private float AngleOffsetCalculation(Vector2 direction, Transform transform_1)
