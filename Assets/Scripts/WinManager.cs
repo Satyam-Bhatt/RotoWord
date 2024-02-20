@@ -31,9 +31,11 @@ public class WinManager : MonoBehaviour
         {
             if(levelCounter <= levels.Length - 1)
             {
-                Debug.Log(checkers.Count);
-                levels[levelCounter].SetActive(true);
-                Invoke("LevelDisabler_Enabler", 1.8f); //Time to switch between the next level
+                if(checkers.Count == 0)
+                {
+                    levels[levelCounter].SetActive(true);
+                    moveToPosition = true;
+                }
             }
             else
             {
@@ -51,11 +53,6 @@ public class WinManager : MonoBehaviour
                 levelCounter++;
             }
         }
-    }
-
-    private void LevelDisabler_Enabler()
-    {
-        moveToPosition = true;
     }
 
     public async void AnimationRoutineCaller()

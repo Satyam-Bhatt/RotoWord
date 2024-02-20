@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class AutoRotator : MonoBehaviour
 {
-    private Quaternion newRot = Quaternion.identity;
+    [HideInInspector] public Quaternion newRot = Quaternion.identity;
 
     [SerializeField] private int perSectionAngle;
     [SerializeField] private int offset = 0;
+
+    [HideInInspector]
+    public bool isAutoRotating = true;
 
     private void Start()
     {
@@ -16,6 +19,8 @@ public class AutoRotator : MonoBehaviour
 
     private void Update()
     {
+        if(!isAutoRotating) return;
+
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             int roll_Z = Mathf.RoundToInt(transform.rotation.eulerAngles.z / perSectionAngle);
