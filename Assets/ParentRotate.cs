@@ -42,11 +42,14 @@ public class ParentRotate : MonoBehaviour
             isAutoRotating = true;
         }
 
-        if (isAutoRotating && transform.rotation == autoRotator.newRot)//Causing bug in level 11
+        float zTransform = transform.rotation.eulerAngles.z;
+        float zAutoRotator = autoRotator.newRot.eulerAngles.z;
+
+        if (isAutoRotating && zAutoRotator - 0.05f <= zTransform && zAutoRotator + 0.05f >= zAutoRotator)//Causing bug in level 11
         {
             thingToParent.SetParent(parent);
             isAutoRotating = false;
-            Debug.Log("Parented");
+            //Debug.Log("Parented");
         }
     }
 }

@@ -8,14 +8,20 @@ public class RotateOtherCircle : MonoBehaviour
 
     private RaycastHit2D hit;
     private float angleOffset;
+    private AutoRotator autoRotator;
 
     //---------------------- If the Circle does not rotate after adding the code below ----------------------
     //|_|_|_|_|_|_|_|_|_|_|_| Add the "InfluentialCircle" Tag |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
 
+    private void Awake()
+    {
+         autoRotator = circleToRotate.GetComponent<AutoRotator>();
+    }
+
     private void Update()
     {
-        AutoRotator autoRotator = circleToRotate.GetComponent<AutoRotator>();
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mousePosition - transform.position).normalized;
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -25,7 +31,7 @@ public class RotateOtherCircle : MonoBehaviour
                 if(hit.collider.gameObject.CompareTag("InfluentialCircle"))
                 {
                     autoRotator.isAutoRotating = false;
-                    Vector2 direction = (mousePosition - transform.position).normalized;
+                    
                     angleOffset = AngleOffsetCalculation(direction, transform);
                 }
             }
@@ -37,7 +43,6 @@ public class RotateOtherCircle : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag("InfluentialCircle"))
                 {
-                    Vector2 direction = (mousePosition - transform.position).normalized;
                     RotateObject(direction, circleToRotate);
                 }
             }

@@ -5,20 +5,27 @@ using UnityEngine;
 
 public class WinManager : MonoBehaviour
 {
-    [HideInInspector] public int win_Counter = 0;
+     public int win_Counter = 0;
     [HideInInspector] public List<Checker> checkers = new List<Checker>();
     [HideInInspector] public float timeCounter = 0f;
     [HideInInspector] public bool isRunning = false;
 
     [SerializeField] private GameObject[] levels;
-    [SerializeField] private Transform[] newPositions; 
+    [SerializeField] private Transform[] newPositions;
+
+    [SerializeField] private GameObject winScreen;
+
+    [Header("Level 11 bug Overcome")]
+    [SerializeField] private GameObject level11Activated;
 
     private bool moveToPosition = false;
     private int levelCounter = 1;
 
     void Start()
     {
-        for(int i = 1; i < levels.Length; i++)
+        winScreen.SetActive(false);
+
+        for (int i = 1; i < levels.Length; i++)
         {
             levels[i].SetActive(false);
         }
@@ -29,9 +36,9 @@ public class WinManager : MonoBehaviour
     {
         if (win_Counter == 0)
         {
-            if(levelCounter <= levels.Length - 1)
+            if (levelCounter <= levels.Length - 1)
             {
-                if(checkers.Count == 0)
+                if (checkers.Count == 0)
                 {
                     levels[levelCounter].SetActive(true);
                     moveToPosition = true;
@@ -39,7 +46,7 @@ public class WinManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("All Levels Cleared");
+                winScreen.SetActive(true);
             }
         }
 
@@ -51,6 +58,10 @@ public class WinManager : MonoBehaviour
             {
                 moveToPosition = false;
                 levelCounter++;
+            }
+            if (levels[levelCounter].gameObject.name == "Level-11" || Input.GetKeyDown(KeyCode.L))
+            {
+                level11Activated.transform.position = Vector2.Lerp(level11Activated.transform.position, newPositions[1].position, 5 * Time.deltaTime);
             }
         }
     }
