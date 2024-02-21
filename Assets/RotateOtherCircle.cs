@@ -9,6 +9,7 @@ public class RotateOtherCircle : MonoBehaviour
     private RaycastHit2D hit;
     private float angleOffset;
     private AutoRotator autoRotator;
+    private bool colliderFound = false;
 
     //---------------------- If the Circle does not rotate after adding the code below ----------------------
     //|_|_|_|_|_|_|_|_|_|_|_| Add the "InfluentialCircle" Tag |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
@@ -31,7 +32,9 @@ public class RotateOtherCircle : MonoBehaviour
                 if(hit.collider.gameObject.CompareTag("InfluentialCircle"))
                 {
                     autoRotator.isAutoRotating = false;
-                    
+
+                    colliderFound = true;
+
                     angleOffset = AngleOffsetCalculation(direction, transform);
                 }
             }
@@ -48,17 +51,17 @@ public class RotateOtherCircle : MonoBehaviour
             }
 
         }
-        if (Input.GetKeyUp(KeyCode.Mouse0))
+
+        if (colliderFound && Input.GetKeyUp(KeyCode.Mouse0))
         {
             int roll_Z = Mathf.RoundToInt(transform.rotation.eulerAngles.z / 90);
             int newRotation = roll_Z * 90;
 
-            autoRotator.newRot = Quaternion.AngleAxis(newRotation, Vector3.forward);
+            autoRotator.newRot = Quaternion.AngleAxis(newRotation + autoRotator.offset, Vector3.forward);
 
             autoRotator.isAutoRotating = true;
+            colliderFound = false;
         }
-
-
     }
 
     private float AngleOffsetCalculation(Vector2 direction, Transform transform_1)

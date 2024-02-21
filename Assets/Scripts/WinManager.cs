@@ -15,9 +15,6 @@ public class WinManager : MonoBehaviour
 
     [SerializeField] private GameObject winScreen;
 
-    [Header("Level 11 bug Overcome")]
-    [SerializeField] private GameObject level11Activated;
-
     private bool moveToPosition = false;
     private int levelCounter = 1;
 
@@ -58,10 +55,6 @@ public class WinManager : MonoBehaviour
             {
                 moveToPosition = false;
                 levelCounter++;
-            }
-            if (levels[levelCounter].gameObject.name == "Level-11" || Input.GetKeyDown(KeyCode.L))
-            {
-                level11Activated.transform.position = Vector2.Lerp(level11Activated.transform.position, newPositions[1].position, 5 * Time.deltaTime);
             }
         }
     }
