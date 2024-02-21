@@ -7,13 +7,12 @@ public class ParentRotate : MonoBehaviour
     [SerializeField] private Transform thingToParent;
 
     private Transform parent;
-    private AutoRotator autoRotator;
-    private bool isAutoRotating = false;
+    private AutoRotator autoRotator_Child;
     private RaycastHit2D hit;
 
     private void Start()
     {
-        autoRotator = GetComponent<AutoRotator>();
+        autoRotator_Child = thingToParent.GetComponent<AutoRotator>();
         parent = thingToParent.parent;
     }
 
@@ -23,33 +22,23 @@ public class ParentRotate : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            thingToParent.SetParent(parent);
+
             hit = Physics2D.Raycast(mousePosition, Vector3.forward, 0f, 5);
             if (hit.collider != null)
             {
                 if (hit.collider.gameObject.CompareTag("OtherTakerCircle"))
                 {
+                    autoRotator_Child.isAutoRotating = false;
                     thingToParent.SetParent(this.transform);
                 }
             }
 
         }
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
 
-        }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            isAutoRotating = true;
-        }
-
-        float zTransform = transform.rotation.eulerAngles.z;
-        float zAutoRotator = autoRotator.newRot.eulerAngles.z;
-
-        if (isAutoRotating && zAutoRotator - 0.05f <= zTransform && zAutoRotator + 0.05f >= zAutoRotator)//Causing bug in level 11
-        {
-            thingToParent.SetParent(parent);
-            isAutoRotating = false;
-            //Debug.Log("Parented");
+            autoRotator_Child.isAutoRotating = true;
         }
     }
 }

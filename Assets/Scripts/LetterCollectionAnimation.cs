@@ -63,7 +63,7 @@ public class LetterCollectionAnimation : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 5 * Time.deltaTime);
         }
 
-        if(Vector3.Distance(transform.position, newPosition.position) < 0.2f)
+        if(Vector3.Distance(transform.position, newPosition.position) < 0.2f && isPlaying)
         {
             AnimationPlay();
         }
