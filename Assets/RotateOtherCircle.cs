@@ -50,6 +50,11 @@ public class RotateOtherCircle : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
+            int roll_Z = Mathf.RoundToInt(transform.rotation.eulerAngles.z / 90);
+            int newRotation = roll_Z * 90;
+
+            autoRotator.newRot = Quaternion.AngleAxis(newRotation, Vector3.forward);
+
             autoRotator.isAutoRotating = true;
         }
 
