@@ -39,10 +39,4 @@ public class AutoRotator : MonoBehaviour
         }
         return a;
     }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(Vector3.zero, Vector3.right * 10);
-    }
 }
