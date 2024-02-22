@@ -29,8 +29,6 @@ public class AutoRotator : MonoBehaviour
 
             newRot = Quaternion.AngleAxis(newRotation + offset, Vector3.forward);
         }
-        //Debug.Log(Vector3.Angle(transform.right, ra)); 
-        Debug.Log(transform.rotation.eulerAngles.z);
         transform.rotation = Quaternion.Slerp(transform.rotation, newRot, 10f * Time.deltaTime);
     }
     private float Ang(float a)
