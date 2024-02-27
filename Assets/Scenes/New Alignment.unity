@@ -35268,7 +35268,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870638979733523317}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.19509031, w: 0.98078537}
   m_LocalPosition: {x: 0, y: -0.86, z: 0.0966}
   m_LocalScale: {x: 3.8074424, y: 3.8074424, z: 3.8074424}
   m_ConstrainProportionsScale: 0
@@ -35276,7 +35276,7 @@ Transform:
   - {fileID: 870638979895716543}
   m_Father: {fileID: 358630712}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 22.5}
 --- !u!114 &870638979895716536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35443,7 +35443,7 @@ MonoBehaviour:
   up_DownCheck: 0
   activationQuadrant: 0
   startAngle: 0
-  parent: {fileID: 0}
+  parent: {fileID: 870638979733523319}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -35869,7 +35869,7 @@ MonoBehaviour:
   up_DownCheck: 0
   activationQuadrant: 0
   startAngle: 0
-  parent: {fileID: 0}
+  parent: {fileID: 870638979733523319}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -36140,7 +36140,7 @@ MonoBehaviour:
   up_DownCheck: 0
   activationQuadrant: 0
   startAngle: 0
-  parent: {fileID: 0}
+  parent: {fileID: 870638979733523319}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -36394,7 +36394,7 @@ MonoBehaviour:
   up_DownCheck: 0
   activationQuadrant: 0
   startAngle: 0
-  parent: {fileID: 0}
+  parent: {fileID: 870638979733523319}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -36648,7 +36648,7 @@ MonoBehaviour:
   up_DownCheck: 0
   activationQuadrant: 0
   startAngle: 0
-  parent: {fileID: 0}
+  parent: {fileID: 870638979733523319}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -36713,7 +36713,7 @@ MonoBehaviour:
   up_DownCheck: 0
   activationQuadrant: 0
   startAngle: 0
-  parent: {fileID: 0}
+  parent: {fileID: 870638979733523319}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -37139,7 +37139,7 @@ MonoBehaviour:
   up_DownCheck: 0
   activationQuadrant: 0
   startAngle: 0
-  parent: {fileID: 0}
+  parent: {fileID: 870638979733523319}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -37204,7 +37204,7 @@ MonoBehaviour:
   up_DownCheck: 0
   activationQuadrant: 0
   startAngle: 0
-  parent: {fileID: 0}
+  parent: {fileID: 870638979733523319}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -37303,7 +37303,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7032827188605034559}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.19825606, w: 0.9801503}
   m_LocalPosition: {x: 0, y: -0.86, z: 0.25}
   m_LocalScale: {x: 6.383507, y: 6.383507, z: 6.383507}
   m_ConstrainProportionsScale: 0
@@ -37311,7 +37311,7 @@ Transform:
   - {fileID: 7032827190140424458}
   m_Father: {fileID: 358630712}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 22.87}
 --- !u!114 &7032827188605034555
 MonoBehaviour:
   m_ObjectHideFlags: 0
