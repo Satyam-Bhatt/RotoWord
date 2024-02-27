@@ -13,7 +13,8 @@ public class DisabledLetterController : MonoBehaviour
     {
         foreach(GameObject g in disabledLetters)
         {
-            g.GetComponent<TMP_Text>().enabled = false;
+            if(g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = false;
+            else g.GetComponentInChildren<TMP_Text>().enabled = false;
             g.GetComponent<Checker>().enabled = false;
         }
     }
@@ -22,7 +23,8 @@ public class DisabledLetterController : MonoBehaviour
     {
         if (index < disabledLetters.Length)
         {
-            disabledLetters[index].GetComponent<TMP_Text>().enabled = true;
+            if(disabledLetters[index].GetComponent<TMP_Text>() != null) disabledLetters[index].GetComponent<TMP_Text>().enabled = true;
+            else disabledLetters[index].GetComponentInChildren<TMP_Text>().enabled = true;
             disabledLetters[index].GetComponent<Checker>().enabled = true;
             index++;
         }

@@ -28,7 +28,7 @@ public class Checker : MonoBehaviour
 
     [HideInInspector]
     public List<LetterCollectionAnimation> letterCollectionAnimationFromHit = new List<LetterCollectionAnimation>();
-
+    
     private void Start()
     { 
         winManager.win_Counter += 1;
@@ -38,7 +38,8 @@ public class Checker : MonoBehaviour
         {
             foreach (GameObject g in mySpecialLetter)
             {
-                g.GetComponent<TMP_Text>().enabled = false;
+                if (g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = false;
+                else g.GetComponentInChildren<TMP_Text>().enabled = false;
                 g.GetComponent<Checker>().enabled = false;
             }
         }
@@ -119,7 +120,8 @@ public class Checker : MonoBehaviour
         {
             foreach(GameObject g in mySpecialLetter)
             {
-                g.GetComponent<TMP_Text>().enabled = true;
+                if(g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = true;
+                else g.GetComponentInChildren<TMP_Text>().enabled = true;
                 g.GetComponent<Checker>().enabled = true;
             }
         }
