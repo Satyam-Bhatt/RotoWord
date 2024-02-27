@@ -154,7 +154,6 @@ RectTransform:
   m_LocalScale: {x: 0.14194278, y: 0.14194278, z: 0.14194278}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2045367703}
   - {fileID: 213175733}
   - {fileID: 158410440}
   m_Father: {fileID: 11263703}
@@ -613,7 +612,7 @@ GameObject:
   - component: {fileID: 38906330}
   - component: {fileID: 38906329}
   m_Layer: 5
-  m_Name: TE
+  m_Name: DD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -632,13 +631,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - A
+  - O
   direction_Ray: -1
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 158410441}
-  numberOfLetterToSpawn: 0
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
+  numberOfLetterToSpawn: -1
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &38906330
@@ -712,7 +713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TE
+  m_text: DD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -802,11 +803,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158410440}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5, y: -1.38}
+  m_AnchoredPosition: {x: -1.35, y: -1.46}
   m_SizeDelta: {x: 2.1145, y: 1.6406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &44061703
@@ -1024,6 +1025,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -1232,6 +1235,8 @@ MonoBehaviour:
   lenght: 2.5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -2333,6 +2338,8 @@ MonoBehaviour:
   lenght: 2.8
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -3619,10 +3626,11 @@ RectTransform:
   - {fileID: 1902156044}
   - {fileID: 424907390}
   - {fileID: 1833129654}
-  - {fileID: 38906335}
   - {fileID: 1954781980}
+  - {fileID: 38906335}
+  - {fileID: 2045367703}
   m_Father: {fileID: 7112451}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3647,6 +3655,7 @@ MonoBehaviour:
   - {fileID: 424907383}
   - {fileID: 1833129647}
   - {fileID: 1954781979}
+  - {fileID: 2045367702}
   - {fileID: 38906328}
 --- !u!1 &183803256
 GameObject:
@@ -4219,7 +4228,7 @@ GameObject:
   - component: {fileID: 213175735}
   - component: {fileID: 213175734}
   m_Layer: 5
-  m_Name: ND
+  m_Name: OD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4238,7 +4247,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7112451}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4288,12 +4297,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - A
-  direction_Ray: -1
+  - G
+  direction_Ray: 1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  up_DownCheck: 0
+  up_DownCheck: 1
   disabledLetterController: {fileID: 158410441}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -4338,7 +4349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ND
+  m_text: OD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5448,6 +5459,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 1516600598}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -5479,7 +5492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPresent_1st_3rd_Quadrant: 0
+  isPresent_1st_3rd_Quadrant: 1
   parent: {fileID: 231867629}
 --- !u!95 &263833883
 Animator:
@@ -6437,6 +6450,8 @@ MonoBehaviour:
   lenght: 3
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -6886,6 +6901,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 1516600598}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -7310,6 +7327,8 @@ MonoBehaviour:
   lenght: 2.5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -7489,7 +7508,7 @@ GameObject:
   - component: {fileID: 424907385}
   - component: {fileID: 424907384}
   m_Layer: 5
-  m_Name: XE
+  m_Name: AP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7508,13 +7527,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - A
-  direction_Ray: -1
+  - G
+  direction_Ray: 1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  up_DownCheck: 0
+  up_DownCheck: 1
   disabledLetterController: {fileID: 158410441}
-  numberOfLetterToSpawn: 0
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
+  numberOfLetterToSpawn: 2
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &424907385
@@ -7588,7 +7609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: XE
+  m_text: AP
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7962,6 +7983,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -8293,6 +8316,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 1516600598}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -10413,6 +10438,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 1516600598}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -11682,6 +11709,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -11893,6 +11922,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -12724,6 +12755,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -12923,6 +12956,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -13381,6 +13416,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -13580,6 +13617,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -13963,6 +14002,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -14896,6 +14937,8 @@ MonoBehaviour:
   lenght: 2.5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -15040,6 +15083,8 @@ MonoBehaviour:
   lenght: 2.8
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -15930,6 +15975,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -16479,6 +16526,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -16810,6 +16859,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -18658,6 +18709,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -19018,6 +19071,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -19151,6 +19206,8 @@ MonoBehaviour:
   lenght: 2.5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -22376,6 +22433,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -22655,7 +22714,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559536855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.14, y: 0, z: 0}
+  m_LocalPosition: {x: 6.61, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23094,7 +23153,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A
+  m_text: O
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23310,7 +23369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: T
+  m_text: W
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23449,6 +23508,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -23832,6 +23893,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 1516600598}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -23863,7 +23926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPresent_1st_3rd_Quadrant: 0
+  isPresent_1st_3rd_Quadrant: 1
   parent: {fileID: 231867629}
 --- !u!95 &1696332215
 Animator:
@@ -24177,6 +24240,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 1516600598}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -24578,6 +24643,8 @@ MonoBehaviour:
   lenght: 2.5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -26324,6 +26391,8 @@ MonoBehaviour:
   lenght: 2.5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -26395,7 +26464,7 @@ GameObject:
   - component: {fileID: 1833129649}
   - component: {fileID: 1833129648}
   m_Layer: 5
-  m_Name: SI
+  m_Name: SA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26414,12 +26483,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - T
+  - W
   direction_Ray: 1
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 158410441}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -26451,7 +26522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPresent_1st_3rd_Quadrant: 0
+  isPresent_1st_3rd_Quadrant: 1
   parent: {fileID: 11263703}
 --- !u!95 &1833129651
 Animator:
@@ -26494,7 +26565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SI
+  m_text: SA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26588,7 +26659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.37, y: -1.29}
+  m_AnchoredPosition: {x: 1.59, y: 1.51}
   m_SizeDelta: {x: 2.1145, y: 1.6406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1836477425
@@ -26652,6 +26723,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 1516600598}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -27213,6 +27286,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -27866,6 +27941,8 @@ MonoBehaviour:
   lenght: 2.5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -28914,6 +28991,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 1516600598}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -28945,7 +29024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPresent_1st_3rd_Quadrant: 0
+  isPresent_1st_3rd_Quadrant: 1
   parent: {fileID: 231867629}
 --- !u!95 &1896515161
 Animator:
@@ -29081,7 +29160,7 @@ GameObject:
   - component: {fileID: 1902156039}
   - component: {fileID: 1902156038}
   m_Layer: 5
-  m_Name: SH
+  m_Name: CR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29100,13 +29179,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - A
+  - Y
   direction_Ray: -1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  up_DownCheck: 0
+  up_DownCheck: 1
   disabledLetterController: {fileID: 158410441}
-  numberOfLetterToSpawn: 0
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
+  numberOfLetterToSpawn: -1
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1902156039
@@ -29180,7 +29261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SH
+  m_text: CR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29339,6 +29420,8 @@ MonoBehaviour:
   lenght: 3
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -29663,7 +29746,7 @@ GameObject:
   - component: {fileID: 1954781982}
   - component: {fileID: 1954781981}
   m_Layer: 5
-  m_Name: CE
+  m_Name: LD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29682,7 +29765,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158410440}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -29702,12 +29785,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - A
+  - O
   direction_Ray: -1
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 158410441}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -29782,7 +29867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CE
+  m_text: LD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30595,6 +30680,8 @@ MonoBehaviour:
   lenght: 2.5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -30811,6 +30898,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -31530,12 +31619,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7112451}
-  m_RootOrder: 0
+  m_Father: {fileID: 158410440}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.49, y: 1.54}
+  m_AnchoredPosition: {x: 1.38, y: -1.52}
   m_SizeDelta: {x: 2.1145, y: 1.6406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045367704
@@ -31551,12 +31640,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - T
-  direction_Ray: 1
+  - Y
+  direction_Ray: -1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  up_DownCheck: 0
+  up_DownCheck: 1
   disabledLetterController: {fileID: 158410441}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -32018,6 +32109,8 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -32712,6 +32805,8 @@ MonoBehaviour:
   lenght: 5
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -33369,7 +33464,7 @@ GameObject:
   - component: {fileID: 2129719706}
   - component: {fileID: 2129719705}
   m_Layer: 5
-  m_Name: CA
+  m_Name: FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33388,13 +33483,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - T
-  direction_Ray: 1
+  - Y
+  direction_Ray: -1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  up_DownCheck: 0
+  up_DownCheck: 1
   disabledLetterController: {fileID: 158410441}
-  numberOfLetterToSpawn: 0
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
+  numberOfLetterToSpawn: 1
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &2129719706
@@ -33468,7 +33565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CA
+  m_text: FR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33562,7 +33659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.46, y: 1.39}
+  m_AnchoredPosition: {x: 1.44, y: -1.4}
   m_SizeDelta: {x: 2.1145, y: 1.6406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2135149370
@@ -34346,6 +34443,8 @@ MonoBehaviour:
   lenght: 2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -34767,6 +34866,8 @@ MonoBehaviour:
   lenght: 2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -35033,6 +35134,8 @@ MonoBehaviour:
   lenght: 2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -35282,6 +35385,8 @@ MonoBehaviour:
   lenght: 2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -35531,6 +35636,8 @@ MonoBehaviour:
   lenght: 2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -35591,6 +35698,8 @@ MonoBehaviour:
   lenght: 2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -36012,6 +36121,8 @@ MonoBehaviour:
   lenght: 2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
@@ -36072,6 +36183,8 @@ MonoBehaviour:
   lenght: 2
   up_DownCheck: 0
   disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
   numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []

@@ -13,6 +13,8 @@ public class Checker : MonoBehaviour
 
     [Header("Disabled Letter")]
     [SerializeField] private DisabledLetterController disabledLetterController;
+    [SerializeField] private bool mySpecialLetterCheck = false;
+    [SerializeField] private GameObject[] mySpecialLetter;
     [SerializeField] private int numberOfLetterToSpawn = 0;
 
     private List<TMP_Text> texts = new List<TMP_Text>();
@@ -104,9 +106,21 @@ public class Checker : MonoBehaviour
 
     public void LetterEnablerCheck()
     {
-        for (int i = 0; i <= numberOfLetterToSpawn; i++)
+        if(mySpecialLetterCheck)
         {
-            if (disabledLetterController != null) disabledLetterController.EnableLetter();
+            foreach(GameObject g in mySpecialLetter)
+            {
+                g.GetComponent<TMP_Text>().enabled = true;
+                g.GetComponent<Checker>().enabled = true;
+            }
         }
+        else
+        {
+            for (int i = 0; i <= numberOfLetterToSpawn; i++)
+            {
+                if (disabledLetterController != null) disabledLetterController.EnableLetter();
+            }
+        }
+
     }
 }
