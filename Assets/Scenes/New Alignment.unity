@@ -1318,7 +1318,7 @@ MonoBehaviour:
   isPlaying: 0
   newPosition: {fileID: 1332295315}
   flip: 0
-  isPersistent: 0
+  isPersistent: 1
 --- !u!95 &90674292
 Animator:
   serializedVersion: 5
@@ -4125,7 +4125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 243260793}
   m_Layer: 0
-  m_Name: Placers
+  m_Name: Placers_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6511,11 +6511,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - E
+  - A
   direction_Ray: -1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  disabledLetterController: {fileID: 0}
+  disabledLetterController: {fileID: 1516600598}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!95 &461986733
@@ -6649,7 +6649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaying: 0
-  newPosition: {fileID: 265318683}
+  newPosition: {fileID: 1332295315}
   flip: 0
   isPersistent: 0
 --- !u!114 &461986737
@@ -8593,11 +8593,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - Ruk
+  - T
   direction_Ray: 1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  disabledLetterController: {fileID: 0}
+  disabledLetterController: {fileID: 1516600598}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &578066624
@@ -15120,7 +15120,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139151379}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a156931c344346469c8b646660fefa3, type: 3}
   m_Name: 
@@ -16246,9 +16246,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaying: 0
-  newPosition: {fileID: 1332295315}
+  newPosition: {fileID: 265318683}
   flip: 0
-  isPersistent: 0
+  isPersistent: 1
 --- !u!95 &1213530293
 Animator:
   serializedVersion: 5
@@ -21015,7 +21015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - P
+  - A
   direction_Ray: -1
   winManager: {fileID: 1139151382}
   lenght: 2.2
@@ -21035,7 +21035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaying: 0
-  newPosition: {fileID: 265318683}
+  newPosition: {fileID: 1332295315}
   flip: 0
   isPersistent: 0
 --- !u!114 &1696332214
@@ -25249,7 +25249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - P
+  - T
   direction_Ray: 1
   winManager: {fileID: 1139151382}
   lenght: 2.2

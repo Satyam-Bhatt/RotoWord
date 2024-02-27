@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DisabledLetterController : MonoBehaviour
 {
@@ -12,15 +13,17 @@ public class DisabledLetterController : MonoBehaviour
     {
         foreach(GameObject g in disabledLetters)
         {
-            g.SetActive(false);
+            g.GetComponent<TMP_Text>().enabled = false;
+            g.GetComponent<Checker>().enabled = false;
         }
     }
 
     public void EnableLetter()
     {
-        if (index >= disabledLetters.Length)
+        if (index < disabledLetters.Length)
         {
-            disabledLetters[index].SetActive(true);
+            disabledLetters[index].GetComponent<TMP_Text>().enabled = true;
+            disabledLetters[index].GetComponent<Checker>().enabled = true;
             index++;
         }
         else
