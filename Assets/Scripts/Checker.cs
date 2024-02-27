@@ -9,7 +9,11 @@ public class Checker : MonoBehaviour
     [SerializeField] private int direction_Ray = 1;
     [SerializeField] private WinManager winManager;
     [SerializeField] private float lenght = 5f;
+    [SerializeField] private bool up_DownCheck = false;
+
+    [Header("Disabled Letter")]
     [SerializeField] private DisabledLetterController disabledLetterController;
+    [SerializeField] private int numberOfLetterToSpawn = 0;
 
     private List<TMP_Text> texts = new List<TMP_Text>();
     private bool runOnce = true;
@@ -32,7 +36,10 @@ public class Checker : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
+        if (!up_DownCheck)
         Gizmos.DrawRay(transform.position,(direction_Ray * transform.right) * lenght);
+        else if(up_DownCheck)
+        Gizmos.DrawRay(transform.position,(direction_Ray * transform.up) * lenght);
     }
 
     private void Update()
@@ -70,7 +77,9 @@ public class Checker : MonoBehaviour
         texts.Clear();
         objectHit.Clear();// <-- this causes a bug where the letters are not destroyed if the player does not wait
         letterCollectionAnimationFromHit.Clear();
-        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position,direction_Ray * transform.right, lenght);
+        RaycastHit2D[] hit = null;
+        if(!up_DownCheck) hit = Physics2D.RaycastAll(transform.position,direction_Ray * transform.right, lenght);
+        else if(up_DownCheck) hit = Physics2D.RaycastAll(transform.position,direction_Ray * transform.up, lenght);
         foreach (RaycastHit2D h in hit)
         {
             TMP_Text text = h.transform.GetComponent<TMP_Text>();
@@ -95,6 +104,9 @@ public class Checker : MonoBehaviour
 
     public void LetterEnablerCheck()
     {
-        if (disabledLetterController != null) disabledLetterController.EnableLetter();
+        for (int i = 0; i <= numberOfLetterToSpawn; i++)
+        {
+            if (disabledLetterController != null) disabledLetterController.EnableLetter();
+        }
     }
 }
