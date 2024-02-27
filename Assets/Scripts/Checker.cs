@@ -11,6 +11,11 @@ public class Checker : MonoBehaviour
     [SerializeField] private float lenght = 5f;
     [SerializeField] private bool up_DownCheck = false;
 
+    [Header("Activation Quadrant")]
+    [SerializeField] private ActivationQuadrant activationQuadrant;
+    [SerializeField] private int startAngle = 0;
+    [SerializeField] private Transform parent;
+
     [Header("Disabled Letter")]
     [SerializeField] private DisabledLetterController disabledLetterController;
     [SerializeField] private bool mySpecialLetterCheck = false;
@@ -48,10 +53,36 @@ public class Checker : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        if (!up_DownCheck)
-        Gizmos.DrawRay(transform.position,(direction_Ray * transform.right) * lenght);
-        else if(up_DownCheck)
-        Gizmos.DrawRay(transform.position,(direction_Ray * transform.up) * lenght);
+
+        int angle = Mathf.RoundToInt(parent.transform.rotation.eulerAngles.z) + startAngle;
+
+        if (activationQuadrant == ActivationQuadrant.First_Quadrant)
+        {
+            if(AngleNormalize(angle) >= 45 && AngleNormalize(angle) <= 135) //make 45 to 40 for better detection
+            {
+                if (!up_DownCheck)
+                Gizmos.DrawRay(transform.position, (direction_Ray * transform.right) * lenght);
+                else
+                Gizmos.DrawRay(transform.position, (direction_Ray * transform.up) * lenght);
+            }
+        }
+        else if(activationQuadrant == ActivationQuadrant.Second_Quadrant)
+        {
+            if (AngleNormalize(angle) >= 225 && AngleNormalize(angle) <= 315) //make -135 to -140 for better detection
+            {
+                if (!up_DownCheck)
+                Gizmos.DrawRay(transform.position, (direction_Ray * transform.right) * lenght);
+                else
+                Gizmos.DrawRay(transform.position, (direction_Ray * transform.up) * lenght);
+            }
+        }
+        else
+        {
+            if (!up_DownCheck)
+                Gizmos.DrawRay(transform.position, (direction_Ray * transform.right) * lenght);
+            else
+                Gizmos.DrawRay(transform.position, (direction_Ray * transform.up) * lenght);
+        }
     }
 
     private void Update()
@@ -89,10 +120,33 @@ public class Checker : MonoBehaviour
         texts.Clear();
         objectHit.Clear();// <-- this causes a bug where the letters are not destroyed if the player does not wait
         letterCollectionAnimationFromHit.Clear();
-        RaycastHit2D[] hit = null;
-        if(!up_DownCheck) hit = Physics2D.RaycastAll(transform.position,direction_Ray * transform.right, lenght);
-        else if(up_DownCheck) hit = Physics2D.RaycastAll(transform.position,direction_Ray * transform.up, lenght);
-        foreach (RaycastHit2D h in hit)
+        RaycastHit2D[] hit_1 = null;
+
+        int angle = Mathf.RoundToInt(parent.transform.rotation.eulerAngles.z) + startAngle;
+
+        if (activationQuadrant == ActivationQuadrant.First_Quadrant)
+        {
+            if (AngleNormalize(angle) >= 45 && AngleNormalize(angle) <= 135) //make 45 to 40 for better detection
+            {
+                if (!up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
+                else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
+            }
+        }
+        else if (activationQuadrant == ActivationQuadrant.Second_Quadrant)
+        {
+            if (AngleNormalize(angle) >= 225 && AngleNormalize(angle) <= 315) //make -135 to -140 for better detection
+            {
+                if (!up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
+                else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
+            }
+        }
+        else
+        {
+            if (!up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
+            else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
+        }
+
+        foreach (RaycastHit2D h in hit_1)
         {
             TMP_Text text = h.transform.GetComponent<TMP_Text>();
 
@@ -133,5 +187,21 @@ public class Checker : MonoBehaviour
             }
         }
 
+    }
+
+    private float AngleNormalize(float angle)
+    {
+        if (angle >= 360)
+        {
+            return angle -= 360;
+        }
+        return angle;
+    }
+
+    private enum ActivationQuadrant
+    {
+        None,
+        First_Quadrant,
+        Second_Quadrant
     }
 }

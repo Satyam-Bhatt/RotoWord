@@ -251,7 +251,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11263702}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0.019999996, y: -0.86, z: 0.0966}
   m_LocalScale: {x: 3.4435117, y: 3.4435117, z: 3.4435117}
   m_ConstrainProportionsScale: 0
@@ -259,7 +259,7 @@ Transform:
   - {fileID: 7112451}
   m_Father: {fileID: 484592714}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!114 &11263704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,8 +634,11 @@ MonoBehaviour:
   - G
   direction_Ray: 1
   winManager: {fileID: 1139151382}
-  lenght: 2.2
+  lenght: 1.5
   up_DownCheck: 1
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 11263703}
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -1024,6 +1027,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -1234,6 +1240,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -2337,6 +2346,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.8
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -4299,8 +4311,11 @@ MonoBehaviour:
   - G
   direction_Ray: 1
   winManager: {fileID: 1139151382}
-  lenght: 2.2
+  lenght: 1.5
   up_DownCheck: 1
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 11263703}
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -5457,6 +5472,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 231867629}
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -6448,6 +6466,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 3
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -6737,6 +6758,136 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &364402211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 364402212}
+  - component: {fileID: 364402213}
+  m_Layer: 5
+  m_Name: AM Container (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &364402212
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364402211}
+  m_LocalRotation: {x: -0, y: -0, z: -0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2064974820}
+  m_Father: {fileID: 1691047702}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.45, y: -1.5}
+  m_SizeDelta: {x: 2.1145, y: 1.6406}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &364402213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364402211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e22e886505b39242a9149f129c333fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letters:
+  - T
+  direction_Ray: 1
+  winManager: {fileID: 1139151382}
+  lenght: 2.2
+  up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 270
+  parent: {fileID: 2019411258}
+  disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
+  numberOfLetterToSpawn: 0
+  letterCollectionAnimation: {fileID: 0}
+  letterCollectionAnimationFromHit: []
+--- !u!1 &369584265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 369584266}
+  - component: {fileID: 369584267}
+  m_Layer: 5
+  m_Name: AM Container (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &369584266
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369584265}
+  m_LocalRotation: {x: -0, y: -0, z: -0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1935424573}
+  m_Father: {fileID: 1691047702}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.45, y: 1.38}
+  m_SizeDelta: {x: 2.1145, y: 1.6406}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &369584267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369584265}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e22e886505b39242a9149f129c333fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letters:
+  - T
+  direction_Ray: 1
+  winManager: {fileID: 1139151382}
+  lenght: 2.2
+  up_DownCheck: 1
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 2019411258}
+  disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
+  numberOfLetterToSpawn: 0
+  letterCollectionAnimation: {fileID: 0}
+  letterCollectionAnimationFromHit: []
 --- !u!1 &370451001
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,6 +7050,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 231867629}
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -7325,6 +7479,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -7529,8 +7686,11 @@ MonoBehaviour:
   - G
   direction_Ray: 1
   winManager: {fileID: 1139151382}
-  lenght: 2.2
+  lenght: 1.5
   up_DownCheck: 1
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 11263703}
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -7981,6 +8141,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -8314,6 +8477,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 231867629}
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -8913,7 +9079,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484592713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.01, y: 0, z: 0}
+  m_LocalPosition: {x: 7.54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10436,6 +10602,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 231867629}
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -10834,15 +11003,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624686636}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.86, z: 0.25}
-  m_LocalScale: {x: 6.5814075, y: 6.5814075, z: 6.5814075}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0.27, y: -0.86, z: 0.25}
+  m_LocalScale: {x: 4.545383, y: 4.545383, z: 4.545383}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 350047635}
   m_Father: {fileID: 2018743004}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!114 &624686638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10857,7 +11026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newRot: {x: 0, y: 0, z: 0, w: 1}
   perSectionAngle: 90
-  offset: 0
+  offset: 45
   isAutoRotating: 1
 --- !u!58 &624686639
 CircleCollider2D:
@@ -10927,6 +11096,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &636433106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 636433107}
+  - component: {fileID: 636433108}
+  m_Layer: 5
+  m_Name: EG Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &636433107
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636433106}
+  m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1089182754}
+  m_Father: {fileID: 1691047702}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.76, y: -1.76}
+  m_SizeDelta: {x: 2.1145, y: 1.6406}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &636433108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636433106}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e22e886505b39242a9149f129c333fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letters:
+  - G
+  direction_Ray: -1
+  winManager: {fileID: 1139151382}
+  lenght: 2.2
+  up_DownCheck: 1
+  activationQuadrant: 1
+  startAngle: 225
+  parent: {fileID: 2019411258}
+  disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
+  numberOfLetterToSpawn: 0
+  letterCollectionAnimation: {fileID: 0}
+  letterCollectionAnimationFromHit: []
 --- !u!1 &641360966
 GameObject:
   m_ObjectHideFlags: 0
@@ -11707,6 +11941,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -11920,6 +12157,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -12753,6 +12993,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -12954,6 +13197,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -13414,6 +13660,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -13615,6 +13864,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -14000,6 +14252,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -14935,6 +15190,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -15081,6 +15339,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.8
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -15537,7 +15798,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015326882}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -15927,7 +16188,7 @@ GameObject:
   - component: {fileID: 1050994809}
   - component: {fileID: 1050994808}
   - component: {fileID: 1050994806}
-  - component: {fileID: 1050994805}
+  - component: {fileID: 1050994811}
   m_Layer: 5
   m_Name: AM
   m_TagString: Untagged
@@ -15955,30 +16216,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2.1145, y: 1.6406}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1050994805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050994803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e22e886505b39242a9149f129c333fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  letters:
-  - T
-  direction_Ray: -1
-  winManager: {fileID: 1139151382}
-  lenght: 2.2
-  up_DownCheck: 0
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
-  mySpecialLetter: []
-  numberOfLetterToSpawn: 0
-  letterCollectionAnimation: {fileID: 0}
-  letterCollectionAnimationFromHit: []
 --- !u!114 &1050994806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15993,7 +16230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 1
+  flip: 0
   isPersistent: 0
 --- !u!95 &1050994808
 Animator:
@@ -16113,6 +16350,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050994803}
   m_CullTransparentMesh: 1
+--- !u!114 &1050994811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050994803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPresent_1st_3rd_Quadrant: 0
+  parent: {fileID: 2019411258}
 --- !u!1 &1054657986
 GameObject:
   m_ObjectHideFlags: 0
@@ -16524,6 +16775,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -16811,7 +17065,6 @@ GameObject:
   - component: {fileID: 1089182758}
   - component: {fileID: 1089182757}
   - component: {fileID: 1089182756}
-  - component: {fileID: 1089182755}
   m_Layer: 5
   m_Name: EG
   m_TagString: Untagged
@@ -16826,43 +17079,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1089182753}
-  m_LocalRotation: {x: -0, y: -0, z: 0.3826834, w: 0.92387956}
+  m_LocalRotation: {x: -0, y: -0, z: -0.000000029802322, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1691047702}
-  m_RootOrder: 1
+  m_Father: {fileID: 636433107}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.76, y: -1.76}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2.1145, y: 1.6406}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1089182755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089182753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e22e886505b39242a9149f129c333fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  letters:
-  - G
-  direction_Ray: 1
-  winManager: {fileID: 1139151382}
-  lenght: 2.2
-  up_DownCheck: 0
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
-  mySpecialLetter: []
-  numberOfLetterToSpawn: 0
-  letterCollectionAnimation: {fileID: 0}
-  letterCollectionAnimationFromHit: []
 --- !u!114 &1089182756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17111,7 +17340,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139151379}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a156931c344346469c8b646660fefa3, type: 3}
   m_Name: 
@@ -18708,6 +18937,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -19070,6 +19302,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -19205,6 +19440,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -21602,7 +21840,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488990786}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -22432,6 +22670,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -22714,7 +22955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559536855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.61, y: 0, z: 0}
+  m_LocalPosition: {x: 7.19, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23507,6 +23748,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -23761,8 +24005,10 @@ RectTransform:
   m_LocalScale: {x: 0.13796712, y: 0.13796712, z: 0.13796712}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 369584266}
   - {fileID: 1707539595}
-  - {fileID: 1089182754}
+  - {fileID: 636433107}
+  - {fileID: 364402212}
   m_Father: {fileID: 2019411258}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23892,6 +24138,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 231867629}
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -24163,7 +24412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1707539595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24178,7 +24427,7 @@ RectTransform:
   m_Children:
   - {fileID: 1050994804}
   m_Father: {fileID: 1691047702}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -24194,11 +24443,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707539594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e22e886505b39242a9149f129c333fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPresent_1st_3rd_Quadrant: 0
+  letters:
+  - T
+  direction_Ray: -1
+  winManager: {fileID: 1139151382}
+  lenght: 2.2
+  up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
   parent: {fileID: 2019411258}
+  disabledLetterController: {fileID: 0}
+  mySpecialLetterCheck: 0
+  mySpecialLetter: []
+  numberOfLetterToSpawn: 0
+  letterCollectionAnimation: {fileID: 0}
+  letterCollectionAnimationFromHit: []
 --- !u!1 &1711381418
 GameObject:
   m_ObjectHideFlags: 0
@@ -24239,6 +24501,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 231867629}
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -24642,6 +24907,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -26390,6 +26658,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -26486,8 +26757,11 @@ MonoBehaviour:
   - W
   direction_Ray: 1
   winManager: {fileID: 1139151382}
-  lenght: 2.2
+  lenght: 1.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 11263703}
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -26722,6 +26996,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 231867629}
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -27285,6 +27562,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -27940,6 +28220,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -28990,6 +29273,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 231867629}
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -29182,8 +29468,11 @@ MonoBehaviour:
   - Y
   direction_Ray: -1
   winManager: {fileID: 1139151382}
-  lenght: 2.2
+  lenght: 1.5
   up_DownCheck: 1
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 11263703}
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 1
   mySpecialLetter:
@@ -29420,6 +29709,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 3
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -29651,6 +29943,195 @@ PrefabInstance:
       objectReference: {fileID: 1332295315}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4ced8672976ce44ebd6423c1e643802, type: 3}
+--- !u!1 &1935424572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1935424573}
+  - component: {fileID: 1935424578}
+  - component: {fileID: 1935424577}
+  - component: {fileID: 1935424576}
+  - component: {fileID: 1935424575}
+  - component: {fileID: 1935424574}
+  m_Layer: 5
+  m_Name: AM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1935424573
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935424572}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 369584266}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2.1145, y: 1.6406}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1935424574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935424572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPresent_1st_3rd_Quadrant: 1
+  parent: {fileID: 2019411258}
+--- !u!114 &1935424575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935424572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff1336811f3f9c4d80385138074a8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaying: 0
+  newPosition: {fileID: 265318683}
+  flip: 0
+  isPersistent: 0
+--- !u!95 &1935424576
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935424572}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1caf16ddb8155145b6a0eda60c5080b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1935424577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935424572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: AM
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 1.31
+  m_fontSizeBase: 1.31
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1935424578
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935424572}
+  m_CullTransparentMesh: 1
 --- !u!1 &1940214298
 GameObject:
   m_ObjectHideFlags: 0
@@ -29789,8 +30270,11 @@ MonoBehaviour:
   - O
   direction_Ray: -1
   winManager: {fileID: 1139151382}
-  lenght: 2.2
+  lenght: 1.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 11263703}
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -30680,6 +31164,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -30701,7 +31188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2018743004
 Transform:
   m_ObjectHideFlags: 0
@@ -30710,7 +31197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018743003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.35, y: 0, z: 0}
+  m_LocalPosition: {x: -0.26, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30745,15 +31232,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019411257}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.86, z: 0.0966}
-  m_LocalScale: {x: 4.446712, y: 4.446712, z: 4.446712}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0.27, y: -0.86, z: 0.0966}
+  m_LocalScale: {x: 3.071077, y: 3.071077, z: 3.071077}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1691047702}
   m_Father: {fileID: 2018743004}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!114 &2019411259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30768,7 +31255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newRot: {x: 0, y: 0, z: 0, w: 1}
   perSectionAngle: 90
-  offset: 0
+  offset: 45
   isAutoRotating: 1
 --- !u!58 &2019411260
 CircleCollider2D:
@@ -30898,6 +31385,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -31644,8 +32134,11 @@ MonoBehaviour:
   - W
   direction_Ray: 1
   winManager: {fileID: 1139151382}
-  lenght: 2.2
+  lenght: 1.5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 11263703}
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -32109,6 +32602,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2.2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 1857439067}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -32284,6 +32780,195 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061874045}
+  m_CullTransparentMesh: 1
+--- !u!1 &2064974819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064974820}
+  - component: {fileID: 2064974825}
+  - component: {fileID: 2064974824}
+  - component: {fileID: 2064974823}
+  - component: {fileID: 2064974822}
+  - component: {fileID: 2064974821}
+  m_Layer: 5
+  m_Name: AM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2064974820
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064974819}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 364402212}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2.1145, y: 1.6406}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2064974821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064974819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPresent_1st_3rd_Quadrant: 0
+  parent: {fileID: 2019411258}
+--- !u!114 &2064974822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064974819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff1336811f3f9c4d80385138074a8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaying: 0
+  newPosition: {fileID: 265318683}
+  flip: 0
+  isPersistent: 0
+--- !u!95 &2064974823
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064974819}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1caf16ddb8155145b6a0eda60c5080b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2064974824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064974819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: AM
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 1.31
+  m_fontSizeBase: 1.31
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2064974825
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064974819}
   m_CullTransparentMesh: 1
 --- !u!1 &2066150893
 GameObject:
@@ -32724,7 +33409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2087328609
 Transform:
   m_ObjectHideFlags: 0
@@ -32805,6 +33490,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 5
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -33487,8 +34175,11 @@ MonoBehaviour:
   - Y
   direction_Ray: -1
   winManager: {fileID: 1139151382}
-  lenght: 2.2
+  lenght: 1.5
   up_DownCheck: 1
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 11263703}
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -34443,6 +35134,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -34866,6 +35560,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -35134,6 +35831,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -35385,6 +36085,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -35636,6 +36339,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -35698,6 +36404,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -36121,6 +36830,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -36183,6 +36895,9 @@ MonoBehaviour:
   winManager: {fileID: 1139151382}
   lenght: 2
   up_DownCheck: 0
+  activationQuadrant: 0
+  startAngle: 0
+  parent: {fileID: 0}
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
