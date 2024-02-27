@@ -88,6 +88,7 @@ public class WinManager : MonoBehaviour
 
         if (checkers.Count > 0)
         {
+            checkers[0].LetterEnablerCheck();
             checkers[0].DestroyThis();
             checkers.Remove(checkers[0]);
             AnimationRoutineCaller();

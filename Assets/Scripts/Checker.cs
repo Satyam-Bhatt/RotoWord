@@ -62,7 +62,7 @@ public class Checker : MonoBehaviour
             winManager.checkers.Add(this);
             winManager.AnimationRoutineCaller();
 
-            if (disabledLetterController != null) disabledLetterController.EnableLetter();
+            //if (disabledLetterController != null) disabledLetterController.EnableLetter();
 
             runOnce = false;
         }
@@ -94,5 +94,10 @@ public class Checker : MonoBehaviour
             Destroy(o); 
         }
         Destroy(gameObject);
+    }
+
+    public void LetterEnablerCheck()
+    {
+        if (disabledLetterController != null) disabledLetterController.EnableLetter();
     }
 }
