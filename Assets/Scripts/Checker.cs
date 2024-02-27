@@ -139,6 +139,7 @@ public class Checker : MonoBehaviour
             {
                 if (!up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
                 else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
+                
             }
         }
         else
