@@ -33,6 +33,15 @@ public class Checker : MonoBehaviour
     { 
         winManager.win_Counter += 1;
         letterCollectionAnimation = GetComponentInChildren<LetterCollectionAnimation>();
+
+        if (mySpecialLetterCheck)
+        {
+            foreach (GameObject g in mySpecialLetter)
+            {
+                g.GetComponent<TMP_Text>().enabled = false;
+                g.GetComponent<Checker>().enabled = false;
+            }
+        }
     }
 
     private void OnDrawGizmos()

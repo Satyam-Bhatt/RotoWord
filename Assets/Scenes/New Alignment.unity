@@ -251,7 +251,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11263702}
-  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.019999996, y: -0.86, z: 0.0966}
   m_LocalScale: {x: 3.4435117, y: 3.4435117, z: 3.4435117}
   m_ConstrainProportionsScale: 0
@@ -259,7 +259,7 @@ Transform:
   - {fileID: 7112451}
   m_Father: {fileID: 484592714}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11263704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 38906330}
   - component: {fileID: 38906329}
   m_Layer: 5
-  m_Name: DD
+  m_Name: EM_Special
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,17 +625,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38906328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e22e886505b39242a9149f129c333fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - O
-  direction_Ray: -1
+  - G
+  direction_Ray: 1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  up_DownCheck: 0
+  up_DownCheck: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPresent_1st_3rd_Quadrant: 0
+  isPresent_1st_3rd_Quadrant: 1
   parent: {fileID: 11263703}
 --- !u!95 &38906332
 Animator:
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38906328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DD
+  m_text: EM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3656,7 +3656,6 @@ MonoBehaviour:
   - {fileID: 1833129647}
   - {fileID: 1954781979}
   - {fileID: 2045367702}
-  - {fileID: 38906328}
 --- !u!1 &183803256
 GameObject:
   m_ObjectHideFlags: 0
@@ -8914,7 +8913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484592713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05, y: 0, z: 0}
+  m_LocalPosition: {x: 7.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17112,7 +17111,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139151379}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a156931c344346469c8b646660fefa3, type: 3}
   m_Name: 
@@ -17124,6 +17123,7 @@ MonoBehaviour:
   levels:
   - {fileID: 2087328608}
   - {fileID: 1559536855}
+  - {fileID: 484592713}
   - {fileID: 2018743003}
   - {fileID: 1682446545}
   - {fileID: 560220835}
@@ -20739,7 +20739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaying: 0
-  newPosition: {fileID: 265318683}
+  newPosition: {fileID: 1332295315}
   flip: 0
   isPersistent: 1
 --- !u!95 &1424810153
@@ -23285,7 +23285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPresent_1st_3rd_Quadrant: 0
-  parent: {fileID: 47105374}
+  parent: {fileID: 1332295315}
 --- !u!114 &1621278926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26464,7 +26464,7 @@ GameObject:
   - component: {fileID: 1833129649}
   - component: {fileID: 1833129648}
   m_Layer: 5
-  m_Name: SA
+  m_Name: JA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26565,7 +26565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SA
+  m_text: JA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29185,9 +29185,10 @@ MonoBehaviour:
   lenght: 2.2
   up_DownCheck: 1
   disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 0
-  mySpecialLetter: []
-  numberOfLetterToSpawn: -1
+  mySpecialLetterCheck: 1
+  mySpecialLetter:
+  - {fileID: 38906328}
+  numberOfLetterToSpawn: 0
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1902156039
@@ -29203,7 +29204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaying: 0
-  newPosition: {fileID: 1332295315}
+  newPosition: {fileID: 265318683}
   flip: 0
   isPersistent: 0
 --- !u!114 &1902156040
@@ -29218,7 +29219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6919b99189201448a3f5dc2866cb0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPresent_1st_3rd_Quadrant: 0
+  isPresent_1st_3rd_Quadrant: 1
   parent: {fileID: 11263703}
 --- !u!95 &1902156041
 Animator:
@@ -31601,7 +31602,7 @@ GameObject:
   - component: {fileID: 2045367705}
   - component: {fileID: 2045367704}
   m_Layer: 5
-  m_Name: AN
+  m_Name: SA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31640,11 +31641,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - Y
-  direction_Ray: -1
+  - W
+  direction_Ray: 1
   winManager: {fileID: 1139151382}
   lenght: 2.2
-  up_DownCheck: 1
+  up_DownCheck: 0
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
   mySpecialLetter: []
@@ -31722,7 +31723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AN
+  m_text: SA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32723,7 +32724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2087328609
 Transform:
   m_ObjectHideFlags: 0
