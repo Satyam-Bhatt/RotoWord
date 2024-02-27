@@ -58,7 +58,7 @@ public class Checker : MonoBehaviour
 
         if (activationQuadrant == ActivationQuadrant.First_Quadrant)
         {
-            if(AngleNormalize(angle) >= 45 && AngleNormalize(angle) <= 135) //make 45 to 40 for better detection
+            if(AngleNormalize(angle) >= 40 && AngleNormalize(angle) <= 140)
             {
                 if (!up_DownCheck)
                 Gizmos.DrawRay(transform.position, (direction_Ray * transform.right) * lenght);
@@ -68,7 +68,7 @@ public class Checker : MonoBehaviour
         }
         else if(activationQuadrant == ActivationQuadrant.Second_Quadrant)
         {
-            if (AngleNormalize(angle) >= 225 && AngleNormalize(angle) <= 315) //make -135 to -140 for better detection
+            if (AngleNormalize(angle) >= 220 && AngleNormalize(angle) <= 320) 
             {
                 if (!up_DownCheck)
                 Gizmos.DrawRay(transform.position, (direction_Ray * transform.right) * lenght);
@@ -126,7 +126,7 @@ public class Checker : MonoBehaviour
 
         if (activationQuadrant == ActivationQuadrant.First_Quadrant)
         {
-            if (AngleNormalize(angle) >= 45 && AngleNormalize(angle) <= 135) //make 45 to 40 for better detection
+            if (AngleNormalize(angle) >= 40 && AngleNormalize(angle) <= 140) 
             {
                 if (!up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
                 else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
@@ -134,7 +134,7 @@ public class Checker : MonoBehaviour
         }
         else if (activationQuadrant == ActivationQuadrant.Second_Quadrant)
         {
-            if (AngleNormalize(angle) >= 225 && AngleNormalize(angle) <= 315) //make -135 to -140 for better detection
+            if (AngleNormalize(angle) >= 220 && AngleNormalize(angle) <= 320)
             {
                 if (!up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
                 else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
@@ -146,17 +146,21 @@ public class Checker : MonoBehaviour
             else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
         }
 
-        foreach (RaycastHit2D h in hit_1)
+        if(hit_1 != null)
         {
-            TMP_Text text = h.transform.GetComponent<TMP_Text>();
-
-            if (text != null)
+            foreach (RaycastHit2D h in hit_1)
             {
-                objectHit.Add(h.transform.gameObject);
-                letterCollectionAnimationFromHit.Add(h.transform.GetComponent<LetterCollectionAnimation>());
-                texts.Add(text);
+                TMP_Text text = h.transform.GetComponent<TMP_Text>();
+
+                if (text != null)
+                {
+                    objectHit.Add(h.transform.gameObject);
+                    letterCollectionAnimationFromHit.Add(h.transform.GetComponent<LetterCollectionAnimation>());
+                    texts.Add(text);
+                }
             }
         }
+
     }
 
     public void DestroyThis()
