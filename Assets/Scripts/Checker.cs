@@ -61,9 +61,6 @@ public class Checker : MonoBehaviour
             winManager.win_Counter -= 1;
             winManager.checkers.Add(this);
             winManager.AnimationRoutineCaller();
-
-            //if (disabledLetterController != null) disabledLetterController.EnableLetter();
-
             runOnce = false;
         }
     }
