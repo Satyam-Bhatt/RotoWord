@@ -9,6 +9,7 @@ public class Checker : MonoBehaviour
     [SerializeField] private int direction_Ray = 1;
     [SerializeField] private WinManager winManager;
     [SerializeField] private float lenght = 5f;
+    [SerializeField] private DisabledLetterController disabledLetterController;
 
     private List<TMP_Text> texts = new List<TMP_Text>();
     private bool runOnce = true;
@@ -60,6 +61,9 @@ public class Checker : MonoBehaviour
             winManager.win_Counter -= 1;
             winManager.checkers.Add(this);
             winManager.AnimationRoutineCaller();
+
+            if (disabledLetterController != null) disabledLetterController.EnableLetter();
+
             runOnce = false;
         }
     }
