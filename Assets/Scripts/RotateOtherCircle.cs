@@ -22,7 +22,6 @@ public class RotateOtherCircle : MonoBehaviour
     private void Update()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = (mousePosition - transform.position).normalized;
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -35,7 +34,9 @@ public class RotateOtherCircle : MonoBehaviour
 
                     colliderFound = true;
 
-                    angleOffset = AngleOffsetCalculation(direction, transform);
+                    Vector2 direction = (mousePosition - hit.transform.position).normalized;
+
+                    angleOffset = AngleOffsetCalculation(direction, circleToRotate);
                 }
             }
         }
@@ -46,6 +47,7 @@ public class RotateOtherCircle : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag("InfluentialCircle"))
                 {
+                    Vector2 direction = (mousePosition - hit.transform.position).normalized;
                     RotateObject(direction, circleToRotate);
                 }
             }
