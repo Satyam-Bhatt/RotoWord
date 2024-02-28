@@ -18,6 +18,7 @@ public class Checker : MonoBehaviour
     [SerializeField] private Transform parent;
 
     [Header("Ray Extender")]
+    [SerializeField] private bool RayExtender = false;
     [SerializeField] private bool top_Left = true;
 
     [Header("Disabled Letter")]
@@ -93,43 +94,10 @@ public class Checker : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, (direction_Ray * transform.right) * lenght, lenght);
-
-        if (top_Left)
+        if(Input.GetKey(KeyCode.Mouse0) && RayExtender)
         {
-            if (hit != null)
-            {
-                foreach (RaycastHit2D h in hit)
-                {
-                    if (h.collider.CompareTag("Top_Left"))
-                    {
-                        lenght = 1.5f;
-                    }
-                    else
-                    {
-                        lenght = 0.3f;
-                    }
-                }
-            }
+            lenght = 0.3f;
         }
-        else if (!top_Left)
-        {
-            if (hit != null)
-            {
-                foreach (RaycastHit2D h in hit)
-                {
-                    if (h.collider.CompareTag("Bottom_Right"))
-                    {
-                        lenght = 1.5f;
-                    }
-                    else
-                    {
-                        lenght = 0.3f;
-                    }
-                }
-            }
-        }
-
 
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
@@ -168,9 +136,52 @@ public class Checker : MonoBehaviour
 
         int angle = Mathf.RoundToInt(parent.transform.rotation.eulerAngles.z) + startAngle;
 
+        //Dirty Code Starts here
+
+        if (top_Left)
+        {
+            RaycastHit2D[] hit_2 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
+            if (hit_2 != null)
+            {
+                foreach (RaycastHit2D h in hit_2)
+                {
+                    if (h.collider.CompareTag("Top_Left"))
+                    {
+                        lenght = 1.5f;
+                        break;
+                    }
+                    else
+                    {
+                        lenght = 0.3f;
+                    }
+                }
+            }
+        }
+        else if (!top_Left)
+        {
+            RaycastHit2D[] hit_2 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
+            if (hit_2 != null)
+            {
+                foreach (RaycastHit2D h in hit_2)
+                {
+                    if (h.collider.CompareTag("Bottom_Right"))
+                    {
+                        lenght = 1.5f;
+                        break;
+                    }
+                    else
+                    {
+                        lenght = 0.3f;
+                    }
+                }
+            }
+        }
+
+        //Dirty Code Ends here
+
         if (activationQuadrant == ActivationQuadrant.First_Quadrant)
         {
-            if (AngleNormalize(angle) >= 40 && AngleNormalize(angle) <= 140) 
+            if (AngleNormalize(angle) >= 40 && AngleNormalize(angle) <= 140)
             {
                 if (!up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
                 else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
@@ -182,7 +193,7 @@ public class Checker : MonoBehaviour
             {
                 if (!up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
                 else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
-                
+
             }
         }
         else

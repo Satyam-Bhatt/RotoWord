@@ -840,6 +840,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 11263703}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
@@ -1074,6 +1075,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 440649531}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -2657,6 +2659,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -4252,6 +4255,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 440649531}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -4757,6 +4761,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 11263703}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
@@ -5652,6 +5657,7 @@ MonoBehaviour:
   activationQuadrant: 1
   startAngle: 180
   parent: {fileID: 2019411258}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -5722,6 +5728,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 231867629}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
@@ -7120,6 +7127,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -7709,6 +7717,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 783107854}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -7775,6 +7784,7 @@ MonoBehaviour:
   activationQuadrant: 1
   startAngle: 270
   parent: {fileID: 2019411258}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -7841,6 +7851,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 90
   parent: {fileID: 2019411258}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -8203,6 +8214,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 231867629}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
@@ -8849,6 +8861,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -8915,6 +8928,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 440649531}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -9121,6 +9135,7 @@ MonoBehaviour:
   activationQuadrant: 1
   startAngle: 0
   parent: {fileID: 2019411258}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -9192,6 +9207,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 11263703}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
@@ -9981,6 +9997,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 231867629}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
@@ -10736,6 +10753,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 90
   parent: {fileID: 2019411258}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -12126,6 +12144,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 231867629}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
@@ -12853,6 +12872,7 @@ MonoBehaviour:
   activationQuadrant: 1
   startAngle: 180
   parent: {fileID: 2019411258}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -12921,6 +12941,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 440649531}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -13207,6 +13228,7 @@ MonoBehaviour:
   activationQuadrant: 1
   startAngle: 90
   parent: {fileID: 5801440698398297623}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -13595,6 +13617,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 783107854}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -13942,6 +13965,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 440649531}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -14013,6 +14037,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -14230,6 +14255,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -15299,6 +15325,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -15637,6 +15664,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -16372,6 +16400,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -18200,6 +18229,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -18856,7 +18886,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021934663}
   m_LocalRotation: {x: -0, y: -0, z: -0.71670485, w: 0.69737667}
-  m_LocalPosition: {x: -1.535, y: -0.88, z: 0}
+  m_LocalPosition: {x: -1.56, y: -0.88, z: 0}
   m_LocalScale: {x: 0.5607533, y: 0.22771706, z: 0.22771706}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19729,6 +19759,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 783107854}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -21286,6 +21317,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 783107854}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -22433,7 +22465,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18216419, y: 0.16541886}
+  m_Offset: {x: 0.42211613, y: -0.0039670467}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -22444,7 +22476,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3070595, y: 1.4086311}
+  m_Size: {x: 2.1917875, y: 1.2150226}
   m_EdgeRadius: 0
 --- !u!1 &1250786343
 GameObject:
@@ -22538,6 +22570,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 783107854}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -22787,6 +22820,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -23505,6 +23539,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 440649531}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -23992,6 +24027,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 270
   parent: {fileID: 2019411258}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -26637,6 +26673,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -26852,6 +26889,7 @@ MonoBehaviour:
   activationQuadrant: 1
   startAngle: 270
   parent: {fileID: 5801440698398297623}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -27980,6 +28018,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -28306,6 +28345,7 @@ MonoBehaviour:
   activationQuadrant: 1
   startAngle: 0
   parent: {fileID: 5801440698398297623}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -28478,6 +28518,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 231867629}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
@@ -28793,6 +28834,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 270
   parent: {fileID: 2019411258}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -28848,6 +28890,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 231867629}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
@@ -31152,6 +31195,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 440649531}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -31218,6 +31262,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -31355,6 +31400,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 11263703}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
@@ -31593,6 +31639,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 231867629}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
@@ -32805,6 +32852,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -33662,6 +33710,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 231867629}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 1516600598}
   mySpecialLetterCheck: 0
@@ -33877,6 +33926,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 90
   parent: {fileID: 5801440698398297623}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -33930,6 +33980,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 11263703}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 1
@@ -34170,6 +34221,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -35440,6 +35492,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 11263703}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
@@ -36205,6 +36258,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 440649531}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -36436,6 +36490,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -37311,6 +37366,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 11263703}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
@@ -37994,6 +38050,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 1857439067}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -38883,6 +38940,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 0}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -39735,6 +39793,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 11263703}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 158410441}
   mySpecialLetterCheck: 0
@@ -40787,6 +40846,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 870638979733523319}
+  RayExtender: 1
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -41214,6 +41274,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 870638979733523319}
+  RayExtender: 1
   top_Left: 0
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -41486,6 +41547,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 870638979733523319}
+  RayExtender: 1
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -41741,6 +41803,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 870638979733523319}
+  RayExtender: 1
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -41996,6 +42059,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 870638979733523319}
+  RayExtender: 1
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -42062,6 +42126,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 870638979733523319}
+  RayExtender: 1
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -42489,6 +42554,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 870638979733523319}
+  RayExtender: 1
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -42555,6 +42621,7 @@ MonoBehaviour:
   activationQuadrant: 0
   startAngle: 0
   parent: {fileID: 870638979733523319}
+  RayExtender: 1
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -43728,6 +43795,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 180
   parent: {fileID: 5801440698398297623}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -43795,6 +43863,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 0
   parent: {fileID: 5801440698398297623}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
@@ -43848,6 +43917,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 90
   parent: {fileID: 5801440698398297623}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 0
@@ -44618,6 +44688,7 @@ MonoBehaviour:
   activationQuadrant: 2
   startAngle: 270
   parent: {fileID: 5801440698398297623}
+  RayExtender: 0
   top_Left: 1
   disabledLetterController: {fileID: 0}
   mySpecialLetterCheck: 1
