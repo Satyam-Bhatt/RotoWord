@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.Burst.CompilerServices;
 
 public class Checker : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Checker : MonoBehaviour
     [SerializeField] private ActivationQuadrant activationQuadrant;
     [SerializeField] private int startAngle = 0;
     [SerializeField] private Transform parent;
+
+    [Header("Ray Extender")]
+    [SerializeField] private bool top_Left = true;
 
     [Header("Disabled Letter")]
     [SerializeField] private DisabledLetterController disabledLetterController;
@@ -84,10 +88,49 @@ public class Checker : MonoBehaviour
             else
                 Gizmos.DrawRay(transform.position, (direction_Ray * transform.up) * lenght);
         }
+           
     }
 
     private void Update()
     {
+        RaycastHit2D[] hit = Physics2D.RaycastAll(transform.position, (direction_Ray * transform.right) * lenght, lenght);
+
+        if (top_Left)
+        {
+            if (hit != null)
+            {
+                foreach (RaycastHit2D h in hit)
+                {
+                    if (h.collider.CompareTag("Top_Left"))
+                    {
+                        lenght = 1.5f;
+                    }
+                    else
+                    {
+                        lenght = 0.3f;
+                    }
+                }
+            }
+        }
+        else if (!top_Left)
+        {
+            if (hit != null)
+            {
+                foreach (RaycastHit2D h in hit)
+                {
+                    if (h.collider.CompareTag("Bottom_Right"))
+                    {
+                        lenght = 1.5f;
+                    }
+                    else
+                    {
+                        lenght = 0.3f;
+                    }
+                }
+            }
+        }
+
+
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             Invoke("Check", 0.3f); //change value if you want to change the delay in checking the right letter
@@ -148,7 +191,7 @@ public class Checker : MonoBehaviour
             else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
         }
 
-        if(hit_1 != null)
+        if (hit_1 != null)
         {
             foreach (RaycastHit2D h in hit_1)
             {

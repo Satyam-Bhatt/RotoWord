@@ -7,7 +7,7 @@ public class AutoRotator : MonoBehaviour
     [HideInInspector] public Quaternion newRot = Quaternion.identity;
 
     [SerializeField] private int perSectionAngle;
-    [SerializeField] public int offset = 0;
+    [SerializeField] public float offset = 0;
 
     [HideInInspector]
     public bool isAutoRotating = true;

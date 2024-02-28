@@ -6,6 +6,8 @@ TagManager:
   tags:
   - InfluentialCircle
   - OtherTakerCircle
+  - Top_Left
+  - Bottom_Right
   layers:
   - Default
   - TransparentFX
