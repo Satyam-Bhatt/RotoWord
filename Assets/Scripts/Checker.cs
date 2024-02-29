@@ -138,7 +138,7 @@ public class Checker : MonoBehaviour
 
         //Dirty Code Starts here
 
-        if (top_Left)
+        if (top_Left && RayExtender)
         {
             RaycastHit2D[] hit_2 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
             if (hit_2 != null)
@@ -157,7 +157,7 @@ public class Checker : MonoBehaviour
                 }
             }
         }
-        else if (!top_Left)
+        else if (!top_Left && RayExtender)
         {
             RaycastHit2D[] hit_2 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.right, lenght);
             if (hit_2 != null)
