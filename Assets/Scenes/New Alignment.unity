@@ -24452,6 +24452,7 @@ GameObject:
   - component: {fileID: 1139151380}
   - component: {fileID: 1139151382}
   - component: {fileID: 1139151383}
+  - component: {fileID: 1139151384}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -24504,13 +24505,6 @@ MonoBehaviour:
   isRunning: 0
   levels:
   - {fileID: 2087328608}
-  - {fileID: 1559536855}
-  - {fileID: 484592713}
-  - {fileID: 2018743003}
-  - {fileID: 560220835}
-  - {fileID: 1393605056}
-  - {fileID: 1123537112}
-  - {fileID: 358630711}
   - {fileID: 36162772}
   newPositions:
   - {fileID: 2004115336}
@@ -24529,6 +24523,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 1940214298}
+--- !u!114 &1139151384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139151379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28de5cd06b4f56478e78057dd79efbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aspectRatio: {x: 9, y: 16}
+  fullScreen: 1
 --- !u!1 &1145243530
 GameObject:
   m_ObjectHideFlags: 0
@@ -42497,7 +42505,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008200415}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e22e886505b39242a9149f129c333fa, type: 3}
   m_Name: 
