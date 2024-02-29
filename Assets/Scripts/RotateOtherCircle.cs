@@ -11,6 +11,8 @@ public class RotateOtherCircle : MonoBehaviour
     private AutoRotator autoRotator;
     private bool colliderFound = false;
 
+    int newRotation = 0;
+
     //---------------------- If the Circle does not rotate after adding the code below ----------------------
     //|_|_|_|_|_|_|_|_|_|_|_| Add the "InfluentialCircle" Tag |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|
 
@@ -56,13 +58,18 @@ public class RotateOtherCircle : MonoBehaviour
 
         if (colliderFound && Input.GetKeyUp(KeyCode.Mouse0))
         {
-            int roll_Z = Mathf.RoundToInt(transform.rotation.eulerAngles.z / 90);
-            int newRotation = roll_Z * 90;
+
+            int roll_Z = Mathf.RoundToInt(Ang(circleToRotate.transform.rotation.eulerAngles.z - autoRotator.offset) / 90);
+            newRotation = roll_Z * 90;
 
             autoRotator.newRot = Quaternion.AngleAxis(newRotation + autoRotator.offset, Vector3.forward);
 
+            float num = newRotation + autoRotator.offset;
+            Debug.Log(newRotation + "-> new rotation " + autoRotator.offset +"--> Offset Total-->"+ num + "    - Another Script");
+            
             autoRotator.isAutoRotating = true;
             colliderFound = false;
+
         }
     }
 
@@ -75,5 +82,14 @@ public class RotateOtherCircle : MonoBehaviour
     {
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform_1.rotation = Quaternion.AngleAxis(angle + angleOffset, Vector3.forward);
+    }
+
+    private float Ang(float a)
+    {
+        if (a >= 180)
+        {
+            return a - 360;
+        }
+        return a;
     }
 }

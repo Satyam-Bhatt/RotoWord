@@ -20,7 +20,6 @@ public class AutoRotator : MonoBehaviour
     private void Update()
     {
         if(!isAutoRotating) return;
-        Vector3 ra = new Vector3(1,0,0);
 
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
@@ -28,6 +27,8 @@ public class AutoRotator : MonoBehaviour
             int newRotation = roll_Z * (perSectionAngle);
 
             newRot = Quaternion.AngleAxis(newRotation + offset, Vector3.forward);
+
+            Debug.Log(newRotation + offset + "      - My script      -> " + transform.name);
         }
         transform.rotation = Quaternion.Slerp(transform.rotation, newRot, 10f * Time.deltaTime);
     }
