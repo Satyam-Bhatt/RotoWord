@@ -27,6 +27,9 @@ public class Checker : MonoBehaviour
     [SerializeField] private GameObject[] mySpecialLetter;
     [SerializeField] private int numberOfLetterToSpawn = 0;
 
+    [Header("Dictionary")]
+    [SerializeField] private ReadFromJSON readFromJSON;
+
     private List<TMP_Text> texts = new List<TMP_Text>();
     private bool runOnce = true;
 
@@ -202,6 +205,8 @@ public class Checker : MonoBehaviour
             else if (up_DownCheck) hit_1 = Physics2D.RaycastAll(transform.position, direction_Ray * transform.up, lenght);
         }
 
+        List<string> letter = new List<string>();
+
         if (hit_1 != null)
         {
             foreach (RaycastHit2D h in hit_1)
@@ -212,8 +217,26 @@ public class Checker : MonoBehaviour
                 {
                     objectHit.Add(h.transform.gameObject);
                     letterCollectionAnimationFromHit.Add(h.transform.GetComponent<LetterCollectionAnimation>());
-                    texts.Add(text);
+                    //texts.Add(text);
+
+                    letter.Add(text.text);
                 }
+            }
+        }
+
+        string myText = GetComponent<TMP_Text>().text;//take it from the child code add
+
+        foreach(string l in letter)
+        {
+            myText = myText + l;
+        }
+
+        foreach(string l in readFromJSON.commonWordsList)
+        {
+            if(l == myText)
+            {
+                Debug.Log("match found");
+                break;
             }
         }
 
