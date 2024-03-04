@@ -231,14 +231,17 @@ public class Checker : MonoBehaviour
         string myText_Reverse = null;
         string myText_Forward = null;
 
-        if (GetComponent<TMP_Text>() != null)
+        //----> Commented out this because we added box collider to the all the words <----------
+
+/*        if (GetComponent<TMP_Text>() != null)
         {
             myText = GetComponent<TMP_Text>().text;
         }
         else
         {
             myText = GetComponentInChildren<TMP_Text>().text;
-        }
+        }*/
+
         myText_Store = myText;
 
         foreach(string l in letter)
