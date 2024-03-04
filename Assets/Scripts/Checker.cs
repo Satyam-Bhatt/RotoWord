@@ -228,10 +228,6 @@ public class Checker : MonoBehaviour
         }
         myText_Reverse = myText;
 
-
-        Debug.Log("Forward-----> " + myText_Forward);
-        Debug.Log("Reverse-----> " + myText_Reverse);
-
         foreach(var l in readFromJSON.commonWordsList)
         {
             if(l.Key == myText_Forward)
@@ -239,6 +235,9 @@ public class Checker : MonoBehaviour
                 winManager.win_Counter -= 1;
                 winManager.checkers.Add(this);
                 winManager.AnimationRoutineCaller();
+
+                readFromJSON.commonWordsList.Remove(l.Key);
+
                 break;
             }
         }
