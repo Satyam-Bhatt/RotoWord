@@ -6,7 +6,6 @@ using Unity.Burst.CompilerServices;
 
 public class Checker : MonoBehaviour
 {
-    [SerializeField] private string[] letters;
     [SerializeField] private int direction_Ray = 1;
     [SerializeField] private WinManager winManager;
     [SerializeField] private float lenght = 5f;
@@ -29,9 +28,6 @@ public class Checker : MonoBehaviour
 
     [Header("Dictionary")]
     [SerializeField] private ReadFromJSON readFromJSON;
-
-    private List<TMP_Text> texts = new List<TMP_Text>();
-    private bool runOnce = true;
 
     [HideInInspector]
     public LetterCollectionAnimation letterCollectionAnimation;
@@ -106,33 +102,10 @@ public class Checker : MonoBehaviour
         {
             Invoke("Check", 0.3f); //change value if you want to change the delay in checking the right letter
         }
-
-        bool value = false;
-
-        for (int i = 0; i < texts.Count; i++)
-        {
-            if (texts.Count != letters.Length) break;
-
-            if (texts[i].text == letters[i]) value = true;
-            else
-            {
-                value = false;
-                break;
-            }
-        }
-
-        if (value == true && runOnce)
-        {            
-            winManager.win_Counter -= 1;
-            winManager.checkers.Add(this);
-            winManager.AnimationRoutineCaller();
-            runOnce = false;
-        }
     }
 
     private void Check()
     {
-        texts.Clear();
         objectHit.Clear();// <-- this causes a bug where the letters are not destroyed if the player does not wait
         letterCollectionAnimationFromHit.Clear();
         RaycastHit2D[] hit_1 = null;
@@ -217,8 +190,6 @@ public class Checker : MonoBehaviour
                 {
                     objectHit.Add(h.transform.gameObject);
                     letterCollectionAnimationFromHit.Add(h.transform.GetComponent<LetterCollectionAnimation>());
-                    //texts.Add(text);
-
                     letter.Add(text.text);
                 }
             }
@@ -263,7 +234,7 @@ public class Checker : MonoBehaviour
 
         foreach(var l in readFromJSON.commonWordsList)
         {
-            if(l.Key == myText_Forward || l.Key == myText_Reverse)
+            if(l.Key == myText_Forward)
             {
                 winManager.win_Counter -= 1;
                 winManager.checkers.Add(this);
@@ -280,7 +251,7 @@ public class Checker : MonoBehaviour
         { 
             Destroy(o); 
         }
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
     public void LetterEnablerCheck()

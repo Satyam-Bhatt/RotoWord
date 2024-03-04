@@ -80,7 +80,7 @@ public class WinManager : MonoBehaviour
             }
             else
             {
-                checkers[0].transform.parent.gameObject.GetComponent<LetterCollectionAnimation>().isPlaying = true;
+                checkers[0].GetComponentInChildren<LetterCollectionAnimation>().isPlaying = true;
             }
             foreach (LetterCollectionAnimation l in checkers[0].letterCollectionAnimationFromHit) { l.isPlaying = true; }
             await Task.Yield();
