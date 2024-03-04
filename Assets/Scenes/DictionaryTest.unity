@@ -845,7 +845,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: -1
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &38906330
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   mySpecialLetter:
   - {fileID: 725677277}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &47105373
@@ -4393,7 +4393,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &170254250
@@ -4900,7 +4900,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!95 &213175737
@@ -6197,7 +6197,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &263833878
@@ -6269,7 +6269,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &263833881
@@ -8849,7 +8849,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 1
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &364402211
@@ -8917,7 +8917,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 1
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &369584265
@@ -8986,7 +8986,7 @@ MonoBehaviour:
   mySpecialLetter:
   - {fileID: 1385716579}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &370451001
@@ -9349,7 +9349,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &372928747
@@ -9998,7 +9998,7 @@ MonoBehaviour:
   mySpecialLetter:
   - {fileID: 1993513244}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &390135963
@@ -10610,7 +10610,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!224 &417416416
@@ -10899,7 +10899,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 2
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &424907385
@@ -11906,7 +11906,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!95 &461986733
@@ -12667,7 +12667,7 @@ MonoBehaviour:
   - {fileID: 636433106}
   - {fileID: 1488990786}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &496560265
@@ -14633,7 +14633,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &578066624
@@ -15475,7 +15475,7 @@ MonoBehaviour:
   - {fileID: 262254143}
   - {fileID: 1627743944}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &641344314
@@ -15544,7 +15544,7 @@ MonoBehaviour:
   mySpecialLetter:
   - {fileID: 165085541}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &641360966
@@ -15843,7 +15843,7 @@ MonoBehaviour:
   - {fileID: 1801179832}
   - {fileID: 1773978230}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &649662979
@@ -16344,7 +16344,7 @@ MonoBehaviour:
   - {fileID: 777412095}
   - {fileID: 1451729917}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &692203837
@@ -17126,7 +17126,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &735773811
@@ -23421,7 +23421,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 1
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1072059850
@@ -25482,7 +25482,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 1
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1163191954
@@ -26925,7 +26925,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 1
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1291306720
@@ -28016,7 +28016,7 @@ MonoBehaviour:
   mySpecialLetter:
   - {fileID: 1819272974}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1367364576
@@ -28504,7 +28504,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 1
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!224 &1385716581
@@ -31410,7 +31410,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1552933173
@@ -31598,7 +31598,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559536855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.19, y: 0, z: 0}
+  m_LocalPosition: {x: 7.58, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33850,7 +33850,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1691047701
@@ -34024,7 +34024,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1696332213
@@ -34346,7 +34346,7 @@ MonoBehaviour:
   - {fileID: 1946152747}
   - {fileID: 417416414}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1711381418
@@ -34398,7 +34398,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1711381420
@@ -37013,7 +37013,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1827306205
@@ -37170,7 +37170,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1833129649
@@ -37410,7 +37410,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1836477428
@@ -39852,7 +39852,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1896515159
@@ -40072,7 +40072,7 @@ MonoBehaviour:
   - {fileID: 1725464430}
   - {fileID: 764677200}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1902156037
@@ -40125,7 +40125,7 @@ MonoBehaviour:
   mySpecialLetter:
   - {fileID: 38906328}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1902156039
@@ -41606,7 +41606,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &1954781982
@@ -42589,7 +42589,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &1998162665
@@ -43701,7 +43701,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &2045367705
@@ -44403,8 +44403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   length: 2.46
-  readFromJSON: {fileID: 1139151385}
   direction_Ray: 1
+  readFromJSON: {fileID: 1139151385}
   letter: []
 --- !u!1 &2057725772
 GameObject:
@@ -45470,7 +45470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2087328609
 Transform:
   m_ObjectHideFlags: 0
@@ -46709,7 +46709,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 1
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &2129719706
@@ -51161,7 +51161,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &5801440696678832012
@@ -51233,7 +51233,7 @@ MonoBehaviour:
   - {fileID: 2045928061}
   - {fileID: 440262379}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!224 &5801440696987842052
@@ -51285,7 +51285,7 @@ MonoBehaviour:
   mySpecialLetterCheck: 0
   mySpecialLetter: []
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!1 &5801440696987842059
@@ -52060,7 +52060,7 @@ MonoBehaviour:
   - {fileID: 944430597}
   - {fileID: 1549593539}
   numberOfLetterToSpawn: 0
-  readFromJSON: {fileID: 0}
+  readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
 --- !u!114 &5801440698497282008

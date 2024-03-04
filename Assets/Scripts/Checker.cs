@@ -224,21 +224,31 @@ public class Checker : MonoBehaviour
             }
         }
 
-        string myText = GetComponent<TMP_Text>().text;//take it from the child code add
+        string myText = null;
         string myText_Reverse = null;
+        string myText_Forward = null;
+
+        if (GetComponent<TMP_Text>() != null)
+        {
+            myText = GetComponent<TMP_Text>().text;
+        }
+        else
+        {
+            myText = GetComponentInChildren<TMP_Text>().text;
+        }
 
         foreach(string l in letter)
         {
-            myText = myText + l;
-            myText_Reverse = l + myText_Reverse;
+            myText_Forward = myText + l;
+            myText_Reverse = l + myText;
         }
 
-        Debug.Log(myText);
-        Debug.Log(myText_Reverse);
+        Debug.Log("Forward-----> " + myText_Forward);
+        Debug.Log("Reverse-----> " + myText_Reverse);
 
         foreach(string l in readFromJSON.commonWordsList)
         {
-            if(l == myText || l == myText_Reverse)
+            if(l == myText_Forward || l == myText_Reverse)
             {
                 winManager.win_Counter -= 1;
                 winManager.checkers.Add(this);
