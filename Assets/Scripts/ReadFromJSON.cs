@@ -26,7 +26,10 @@ public class ReadFromJSON : MonoBehaviour
 
         foreach (string word in wordData.commonWords)
         {
-            commonWordsList.Add(word.ToUpper(), true);
+            if(word.Length > 1)
+            {
+                commonWordsList.Add(word.ToUpper(), true);
+            }
         }
     }
 }

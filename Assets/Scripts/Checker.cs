@@ -224,7 +224,10 @@ public class Checker : MonoBehaviour
             }
         }
 
+        if (letter.Count < 1) return;
+
         string myText = null;
+        string myText_Store = null;
         string myText_Reverse = null;
         string myText_Forward = null;
 
@@ -236,12 +239,21 @@ public class Checker : MonoBehaviour
         {
             myText = GetComponentInChildren<TMP_Text>().text;
         }
+        myText_Store = myText;
 
         foreach(string l in letter)
         {
-            myText_Forward = myText + l;
-            myText_Reverse = l + myText;
+            myText = myText + l;
         }
+        myText_Forward = myText;
+        myText = myText_Store;
+
+        foreach (string l in letter)
+        {
+            myText = l + myText;
+        }
+        myText_Reverse = myText;
+
 
         Debug.Log("Forward-----> " + myText_Forward);
         Debug.Log("Reverse-----> " + myText_Reverse);
@@ -253,7 +265,6 @@ public class Checker : MonoBehaviour
                 winManager.win_Counter -= 1;
                 winManager.checkers.Add(this);
                 winManager.AnimationRoutineCaller();
-                Debug.Log("match found");
                 break;
             }
         }
