@@ -236,6 +236,8 @@ public class Checker : MonoBehaviour
                 winManager.checkers.Add(this);
                 winManager.AnimationRoutineCaller();
 
+                Debug.Log(l.Key);
+
                 readFromJSON.commonWordsList.Remove(l.Key);
 
                 break;

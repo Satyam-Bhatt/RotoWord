@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/New Alignment.unity
-    guid: d95373b6ed3ca694b85934dac2ba2f65
+    path: Assets/Scenes/DictionaryTest.unity
+    guid: 61c7158bad26b2d4c868cfd992e1b291
   m_configObjects: {}
