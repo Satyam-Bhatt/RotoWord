@@ -47,9 +47,9 @@ public class Checker_Dictionary : MonoBehaviour
             myText = myText + l;
         }
         
-        foreach(string l in readFromJSON.commonWordsList)
+        foreach(var l in readFromJSON.commonWordsList)
         {
-            if(l == myText)
+            if(l.Key == myText)
             {
 
                 Debug.Log("match found");

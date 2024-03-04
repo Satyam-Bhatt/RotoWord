@@ -7,7 +7,7 @@ public class ReadFromJSON : MonoBehaviour
 {
     [SerializeField] private TextAsset allWords;
     
-    public List<string> commonWordsList;
+    public Dictionary<string, bool> commonWordsList;
 
     //[System.Serializable]
     public class WordData
@@ -22,11 +22,11 @@ public class ReadFromJSON : MonoBehaviour
     {
         wordData = JsonUtility.FromJson<WordData>(allWords.text);
 
-        commonWordsList = new List<string>(wordData.commonWords);
+        commonWordsList = new Dictionary<string, bool>();
 
-        for (int i = 0; i < commonWordsList.Count; i++)
+        foreach (string word in wordData.commonWords)
         {
-            commonWordsList[i] = commonWordsList[i].ToUpper();
+            commonWordsList.Add(word.ToUpper(), true);
         }
     }
 }

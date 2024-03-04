@@ -246,9 +246,9 @@ public class Checker : MonoBehaviour
         Debug.Log("Forward-----> " + myText_Forward);
         Debug.Log("Reverse-----> " + myText_Reverse);
 
-        foreach(string l in readFromJSON.commonWordsList)
+        foreach(var l in readFromJSON.commonWordsList)
         {
-            if(l == myText_Forward || l == myText_Reverse)
+            if(l.Key == myText_Forward || l.Key == myText_Reverse)
             {
                 winManager.win_Counter -= 1;
                 winManager.checkers.Add(this);
