@@ -5,8 +5,8 @@ using UnityEngine;
 public class Checker_Dictionary : MonoBehaviour
 {
     [SerializeField] private float length;
-    [SerializeField] private ReadFromJSON readFromJSON;
     [SerializeField] private int direction_Ray = 1;
+    [SerializeField] private ReadFromJSON readFromJSON;
 
     public List<string> letter = new List<string>();
 
@@ -51,6 +51,7 @@ public class Checker_Dictionary : MonoBehaviour
         {
             if(l == myText)
             {
+
                 Debug.Log("match found");
                 break;
             }

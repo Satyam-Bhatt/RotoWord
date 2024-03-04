@@ -225,16 +225,24 @@ public class Checker : MonoBehaviour
         }
 
         string myText = GetComponent<TMP_Text>().text;//take it from the child code add
+        string myText_Reverse = null;
 
         foreach(string l in letter)
         {
             myText = myText + l;
+            myText_Reverse = l + myText_Reverse;
         }
+
+        Debug.Log(myText);
+        Debug.Log(myText_Reverse);
 
         foreach(string l in readFromJSON.commonWordsList)
         {
-            if(l == myText)
+            if(l == myText || l == myText_Reverse)
             {
+                winManager.win_Counter -= 1;
+                winManager.checkers.Add(this);
+                winManager.AnimationRoutineCaller();
                 Debug.Log("match found");
                 break;
             }
