@@ -10,7 +10,7 @@ public class LetterCollectionAnimation : MonoBehaviour
     [SerializeField] private Transform newPosition;
     //[SerializeField] private bool flip = false;
 
-    public bool isPersistent;
+    //public bool isPersistent;
 
     private Animator animator;
     private LetterRotation letterRotation;
@@ -33,7 +33,7 @@ public class LetterCollectionAnimation : MonoBehaviour
 
         if (isPlaying)
         {
-            if (isPersistent)
+/*            if (isPersistent)
             {
                 GameObject thisLetter = transform.gameObject;
                 GameObject newLetter = Instantiate(thisLetter, transform.position, transform.rotation);
@@ -41,7 +41,7 @@ public class LetterCollectionAnimation : MonoBehaviour
                 newLetter.GetComponent<LetterCollectionAnimation>().isPersistent = true;
                 newLetter.transform.SetParent(thisLetter.transform.parent);
                 isPersistent = false;
-            }
+            }*/
 /*            if (flip)
             {
                 GameObject thisLetter2 = transform.gameObject;

@@ -26,10 +26,11 @@ public class Checker : MonoBehaviour
     [Header("Dictionary")]
     [SerializeField] private ReadFromJSON readFromJSON;
 
-    [HideInInspector]
-    public LetterCollectionAnimation letterCollectionAnimation;
+    [Header("Level Clear Condition")]
+    [SerializeField] private LevelFinishCriteria levelFinishCriteria;
+    [HideInInspector] public bool levelFinishLetterFound = false;
 
-
+    [HideInInspector] public LetterCollectionAnimation letterCollectionAnimation;
     [HideInInspector] public List<LetterCollectionAnimation> letterCollectionAnimationFromHit = new List<LetterCollectionAnimation>();
     [HideInInspector] public string wordCompleted = null;
 
@@ -223,17 +224,26 @@ public class Checker : MonoBehaviour
         }
         myText_Reverse = myText;
 
-        foreach(var l in readFromJSON.commonWordsList)
+        foreach (string m in levelFinishCriteria.wordsToWin)
+        {
+            if (m == myText_Forward)
+            {
+                levelFinishLetterFound = true;
+                break;
+            }
+
+            else levelFinishLetterFound = false;
+        }
+
+        foreach (var l in readFromJSON.commonWordsList)
         {
             if(l.Key == myText_Forward)
             {
                 wordCompleted = l.Key;
                 winManager.win_Counter -= 1;
                 winManager.checkers.Add(this);
-                winManager.AnimationRoutineCaller();
-                
+                winManager.AnimationRoutineCaller();                
                 Debug.Log(l.Key);
-
                 readFromJSON.commonWordsList.Remove(l.Key);
 
                 break;

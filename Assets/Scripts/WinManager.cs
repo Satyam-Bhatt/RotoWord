@@ -77,41 +77,52 @@ public class WinManager : MonoBehaviour
     {
         timeCounter = Time.time + 1.8f; //to control the amount of time next word comes and previous one is destroyed
         isRunning = true;
+        GameObject completedWord_New = null;
 
-        GameObject completedWord_New = Instantiate(completeWord, checkers[0].transform.position, checkers[0].transform.rotation);
-        
-        RectTransform rectTransform = checkers[0].GetComponent<RectTransform>();
-        completedWord_New.GetComponent<RectTransform>().position = rectTransform.position;
-        completedWord_New.GetComponent<RectTransform>().rotation = rectTransform.rotation;
-        completedWord_New.GetComponent<RectTransform>().sizeDelta = rectTransform.sizeDelta;
-        completedWord_New.GetComponent<RectTransform>().position = rectTransform.position;
-
-        completedWord_New.transform.SetParent(checkers[0].transform.parent);
-        completedWord_New.GetComponent<TMP_Text>().text = checkers[0].wordCompleted;
-
-        while (Time.time < timeCounter)
+        if (!checkers[0].levelFinishLetterFound)
         {
-            if(checkers[0].letterCollectionAnimation != null)
+            completedWord_New = Instantiate(completeWord, checkers[0].transform.position, checkers[0].transform.rotation);
+        
+            RectTransform rectTransform = checkers[0].GetComponent<RectTransform>();
+            completedWord_New.GetComponent<RectTransform>().position = rectTransform.position;
+            completedWord_New.GetComponent<RectTransform>().rotation = rectTransform.rotation;
+            completedWord_New.GetComponent<RectTransform>().sizeDelta = rectTransform.sizeDelta;
+            completedWord_New.GetComponent<RectTransform>().position = rectTransform.position;
+
+            completedWord_New.transform.SetParent(checkers[0].transform.parent);
+            completedWord_New.GetComponent<TMP_Text>().text = checkers[0].wordCompleted;
+        }
+
+
+       while (Time.time < timeCounter)
+        {
+            if (checkers[0].levelFinishLetterFound)
             {
-                checkers[0].letterCollectionAnimation.isPlaying = true;
+                if (checkers[0].letterCollectionAnimation != null)
+                {
+                    checkers[0].letterCollectionAnimation.isPlaying = true;
+                }
+                else
+                {
+                    checkers[0].GetComponentInChildren<LetterCollectionAnimation>().isPlaying = true;
+                }
+                foreach (LetterCollectionAnimation l in checkers[0].letterCollectionAnimationFromHit) { l.isPlaying = true; }
             }
             else
             {
-                checkers[0].GetComponentInChildren<LetterCollectionAnimation>().isPlaying = true;
+                completedWord_New.GetComponent<LetterCollectionAnimation_General>().newPosition_General = placeWhereTheWordGoes;
             }
-            foreach (LetterCollectionAnimation l in checkers[0].letterCollectionAnimationFromHit) { l.isPlaying = true; }
-
-            completedWord_New.GetComponent<LetterCollectionAnimation_General>().newPosition_General = placeWhereTheWordGoes;
-           
-            
             await Task.Yield();
         }
 
         if (checkers.Count > 0)
         {
-           // checkers[0].wordCompleted = null;//necessary??
-            checkers[0].LetterEnablerCheck();
-            checkers[0].DestroyThis();
+            checkers[0].wordCompleted = null; // necessary??
+            
+            if (checkers[0].levelFinishLetterFound) checkers[0].DestroyThis();
+            checkers[0].levelFinishLetterFound = false; // necessary????
+            
+            checkers[0].LetterEnablerCheck(); // For Disabled Letters
             checkers.Remove(checkers[0]);
             AnimationRoutineCaller();
         }
