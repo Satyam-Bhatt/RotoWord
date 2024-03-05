@@ -21,7 +21,9 @@ public class Checker : MonoBehaviour
     [SerializeField] private bool top_Left = true;
 
     [Header("Disabled Letter")]
+    [SerializeField] private bool disabledLetter_Bool = false;
     [SerializeField] private GameObject[] mySpecialLetter;
+    [SerializeField] private DisabledLetterController[] disabledLetterController;
 
     [Header("Dictionary")]
     [SerializeField] private ReadFromJSON readFromJSON;
@@ -264,15 +266,32 @@ public class Checker : MonoBehaviour
 
     public void LetterEnablerCheck()
     {
-        foreach (GameObject g in mySpecialLetter)
+        if (!disabledLetter_Bool)
         {
-            if (g != null)
+            foreach (GameObject g in mySpecialLetter)
             {
-                if (g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = true;
-                else g.GetComponentInChildren<TMP_Text>().enabled = true;
-                if (g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = true;
-                if (g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = true;
-                else g.GetComponentInChildren<BoxCollider2D>().enabled = true;
+                if (g != null)
+                {
+                    if (g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = true;
+                    else g.GetComponentInChildren<TMP_Text>().enabled = true;
+                    if (g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = true;
+                    if (g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = true;
+                    else g.GetComponentInChildren<BoxCollider2D>().enabled = true;
+                }
+            }
+        }
+        else
+        {
+            if(disabledLetterController != null)
+            {
+                foreach (DisabledLetterController g in disabledLetterController)
+                {
+                    g.EnableLetter();
+                }
+            }
+            else
+            {
+                Debug.Log("Controller Missing");
             }
         }
     }
