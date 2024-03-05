@@ -421,7 +421,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 1
 --- !u!114 &26645860
 MonoBehaviour:
@@ -615,7 +614,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 758604517}
-  flip: 0
   isPersistent: 0
 --- !u!95 &26769709
 Animator:
@@ -961,7 +959,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &27293599
 MonoBehaviour:
@@ -977,6 +974,206 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPresent_1st_3rd_Quadrant: 0
   parent: {fileID: 2038270630}
+--- !u!1 &33968653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 33968654}
+  - component: {fileID: 33968659}
+  - component: {fileID: 33968658}
+  - component: {fileID: 33968657}
+  - component: {fileID: 33968656}
+  - component: {fileID: 33968655}
+  m_Layer: 5
+  m_Name: PF_Word
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &33968654
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33968653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1270059014}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &33968655
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33968653}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &33968656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33968653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff1336811f3f9c4d80385138074a8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaying: 0
+  newPosition: {fileID: 260739828}
+  isPersistent: 0
+--- !u!95 &33968657
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33968653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1caf16ddb8155145b6a0eda60c5080b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &33968658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33968653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 1.31
+  m_fontSizeBase: 1.31
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &33968659
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33968653}
+  m_CullTransparentMesh: 1
 --- !u!1 &36162772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1273,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &38906331
 MonoBehaviour:
@@ -1498,7 +1694,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &50899772
 MonoBehaviour:
@@ -1687,7 +1882,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &52711809
 MonoBehaviour:
@@ -1945,7 +2139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 0
 --- !u!114 &62539151
 MonoBehaviour:
@@ -2309,7 +2502,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!95 &72535900
 Animator:
@@ -2632,7 +2824,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!61 &73774991
 BoxCollider2D:
@@ -2945,7 +3136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 1
 --- !u!95 &90674292
 Animator:
@@ -3161,7 +3351,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &93192102
 Animator:
@@ -3385,7 +3574,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 1
 --- !u!114 &96792285
 MonoBehaviour:
@@ -3622,7 +3810,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 1
 --- !u!95 &123191166
 Animator:
@@ -3824,7 +4011,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 1
 --- !u!114 &123397081
 MonoBehaviour:
@@ -4076,7 +4262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &132031888
 MonoBehaviour:
@@ -4306,7 +4491,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!95 &133981303
 Animator:
@@ -4731,7 +4915,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153278981}
-  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.01899992, y: 0.48000002, z: 0.14748}
   m_LocalScale: {x: 1.7633696, y: 1.7633696, z: 1.7633696}
   m_ConstrainProportionsScale: 0
@@ -4739,7 +4923,7 @@ Transform:
   - {fileID: 1270059014}
   m_Father: {fileID: 378216972}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &153278983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4999,7 +5183,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 0
 --- !u!114 &158353857
 MonoBehaviour:
@@ -5409,7 +5592,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 0
 --- !u!114 &170254253
 MonoBehaviour:
@@ -5649,7 +5831,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 1
 --- !u!95 &201017307
 Animator:
@@ -5969,7 +6150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &213175736
 MonoBehaviour:
@@ -6238,7 +6418,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 1
   isPersistent: 0
 --- !u!95 &228509391
 Animator:
@@ -6454,7 +6633,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!61 &228732834
 BoxCollider2D:
@@ -7162,7 +7340,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 1
   isPersistent: 0
 --- !u!61 &250435209
 BoxCollider2D:
@@ -7489,7 +7666,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &263833882
 MonoBehaviour:
@@ -7829,7 +8005,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &279916584
 MonoBehaviour:
@@ -8065,7 +8240,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 0
 --- !u!114 &281064503
 MonoBehaviour:
@@ -8620,7 +8794,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 1
 --- !u!61 &307830860
 BoxCollider2D:
@@ -8938,7 +9111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!95 &325065554
 Animator:
@@ -9160,7 +9332,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!114 &333995435
 MonoBehaviour:
@@ -9366,7 +9537,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!61 &345582193
 BoxCollider2D:
@@ -9669,7 +9839,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &351864995
 MonoBehaviour:
@@ -10193,7 +10362,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &372201572
 MonoBehaviour:
@@ -10411,7 +10579,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &372928748
 MonoBehaviour:
@@ -10615,7 +10782,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!95 &377084178
 Animator:
@@ -10867,7 +11033,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!61 &384202194
 BoxCollider2D:
@@ -11310,7 +11475,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!95 &412164088
 Animator:
@@ -11511,7 +11675,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &413174033
 MonoBehaviour:
@@ -11781,7 +11944,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!61 &419907035
 BoxCollider2D:
@@ -11991,7 +12153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &424907386
 MonoBehaviour:
@@ -12215,7 +12376,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!61 &424970084
 BoxCollider2D:
@@ -12431,7 +12591,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!61 &431383530
 BoxCollider2D:
@@ -12720,7 +12879,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &440262383
 MonoBehaviour:
@@ -13034,7 +13192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 1
 --- !u!114 &455981956
 MonoBehaviour:
@@ -13396,7 +13553,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &461986737
 MonoBehaviour:
@@ -13694,7 +13850,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 0
 --- !u!114 &479115462
 MonoBehaviour:
@@ -14220,7 +14375,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!114 &509494069
 MonoBehaviour:
@@ -14410,7 +14564,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!114 &516825214
 MonoBehaviour:
@@ -14687,7 +14840,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &521747332
 MonoBehaviour:
@@ -15127,7 +15279,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &549451222
 MonoBehaviour:
@@ -15331,7 +15482,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 1
 --- !u!95 &550805731
 Animator:
@@ -15532,7 +15682,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!114 &554147270
 MonoBehaviour:
@@ -15874,7 +16023,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!61 &566377012
 BoxCollider2D:
@@ -16104,7 +16252,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &578066625
 MonoBehaviour:
@@ -16903,7 +17050,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 1
 --- !u!114 &612290399
 MonoBehaviour:
@@ -17119,7 +17265,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 1
 --- !u!114 &615374050
 MonoBehaviour:
@@ -17950,7 +18095,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 0
 --- !u!114 &649662982
 MonoBehaviour:
@@ -18497,7 +18641,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &692203842
 MonoBehaviour:
@@ -18666,7 +18809,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 1
 --- !u!114 &698904324
 MonoBehaviour:
@@ -19173,7 +19315,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 0
 --- !u!95 &717906851
 Animator:
@@ -19469,7 +19610,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &735773815
 MonoBehaviour:
@@ -19686,7 +19826,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 1
   isPersistent: 0
 --- !u!95 &748783655
 Animator:
@@ -19977,7 +20116,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!61 &752720021
 BoxCollider2D:
@@ -20231,7 +20369,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &764677204
 MonoBehaviour:
@@ -20448,7 +20585,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 1
 --- !u!114 &776404062
 MonoBehaviour:
@@ -20670,7 +20806,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!61 &777412098
 BoxCollider2D:
@@ -21000,7 +21135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 1
   isPersistent: 0
 --- !u!95 &782834095
 Animator:
@@ -21337,7 +21471,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!95 &784575471
 Animator:
@@ -21541,7 +21674,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 1
 --- !u!61 &795713646
 BoxCollider2D:
@@ -21868,7 +22000,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &806439030
 Animator:
@@ -22069,7 +22200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &839121873
 Animator:
@@ -22472,7 +22602,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &864598578
 MonoBehaviour:
@@ -22661,7 +22790,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 1
   isPersistent: 0
 --- !u!95 &867749718
 Animator:
@@ -22884,7 +23012,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 1
 --- !u!114 &874314182
 MonoBehaviour:
@@ -23078,7 +23205,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 0
 --- !u!114 &876774018
 MonoBehaviour:
@@ -23333,7 +23459,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &904925590
 Animator:
@@ -23509,7 +23634,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &907038834
 MonoBehaviour:
@@ -24043,7 +24167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!61 &944430600
 BoxCollider2D:
@@ -24272,7 +24395,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &953962195
 Animator:
@@ -24448,7 +24570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!114 &970229668
 MonoBehaviour:
@@ -24848,7 +24969,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 0
 --- !u!114 &994241801
 MonoBehaviour:
@@ -25108,7 +25228,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1015326885
 Animator:
@@ -25664,7 +25783,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1038718303
 MonoBehaviour:
@@ -25868,7 +25986,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1046574714
 Animator:
@@ -26188,7 +26305,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1050994808
 Animator:
@@ -26683,7 +26799,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1072059853
 Animator:
@@ -26898,7 +27013,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1072952999
 MonoBehaviour:
@@ -27206,7 +27320,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1089182757
 MonoBehaviour:
@@ -27396,7 +27509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1091467912
 MonoBehaviour:
@@ -27678,7 +27790,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1106550622
 MonoBehaviour:
@@ -28133,7 +28244,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 758604517}
-  flip: 0
   isPersistent: 0
 --- !u!61 &1145243534
 BoxCollider2D:
@@ -28334,7 +28444,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1146090030
 MonoBehaviour:
@@ -28538,7 +28647,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!61 &1146658077
 BoxCollider2D:
@@ -28806,7 +28914,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 1
 --- !u!114 &1158261891
 MonoBehaviour:
@@ -29140,7 +29247,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1167000435
 Animator:
@@ -29364,7 +29470,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 1
 --- !u!114 &1184687874
 MonoBehaviour:
@@ -29666,7 +29771,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1188899217
 Animator:
@@ -29812,7 +29916,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191095075}
-  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.019, y: 0.48000002, z: 0.2497}
   m_LocalScale: {x: 2.792694, y: 2.792694, z: 2.792694}
   m_ConstrainProportionsScale: 0
@@ -29820,7 +29924,7 @@ Transform:
   - {fileID: 209704280}
   m_Father: {fileID: 378216972}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1191095077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30356,7 +30460,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 1
 --- !u!95 &1213530293
 Animator:
@@ -30605,7 +30708,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 1
 --- !u!114 &1222003727
 MonoBehaviour:
@@ -30820,7 +30922,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1223717716
 MonoBehaviour:
@@ -31092,6 +31193,7 @@ RectTransform:
   - {fileID: 935371164}
   - {fileID: 437224818}
   - {fileID: 159110647}
+  - {fileID: 33968654}
   m_Father: {fileID: 153278982}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31314,7 +31416,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1294477586
 MonoBehaviour:
@@ -31553,7 +31654,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1297515318
 MonoBehaviour:
@@ -31889,7 +31989,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 1
 --- !u!114 &1303205748
 MonoBehaviour:
@@ -32112,7 +32211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 1
 --- !u!61 &1307795948
 BoxCollider2D:
@@ -32342,7 +32440,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1316744662
 Animator:
@@ -32558,7 +32655,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 1
 --- !u!95 &1322467867
 Animator:
@@ -32804,7 +32900,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1351834446
 Animator:
@@ -33060,7 +33155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1367364580
 Animator:
@@ -33257,7 +33351,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1367458957
 MonoBehaviour:
@@ -33704,7 +33797,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!61 &1417122287
 BoxCollider2D:
@@ -33967,7 +34059,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 1
 --- !u!95 &1424810153
 Animator:
@@ -34464,7 +34555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1451729921
 Animator:
@@ -34969,7 +35059,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1475185952
 Animator:
@@ -35246,7 +35335,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 1
 --- !u!114 &1479889927
 MonoBehaviour:
@@ -35544,7 +35632,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!61 &1488990789
 BoxCollider2D:
@@ -36333,7 +36420,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1541112203
 MonoBehaviour:
@@ -36543,7 +36629,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1546237460
 MonoBehaviour:
@@ -37016,7 +37101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1581630418
 MonoBehaviour:
@@ -37417,7 +37501,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1605951332
 Animator:
@@ -37633,7 +37716,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 1
 --- !u!95 &1606578324
 Animator:
@@ -37849,7 +37931,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 1
 --- !u!95 &1621278927
 Animator:
@@ -38051,7 +38132,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 1
 --- !u!114 &1623399443
 MonoBehaviour:
@@ -38281,7 +38361,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 1
 --- !u!61 &1627743948
 BoxCollider2D:
@@ -38511,7 +38590,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 1
   isPersistent: 0
 --- !u!95 &1629987965
 Animator:
@@ -38766,7 +38844,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1649163729
 MonoBehaviour:
@@ -39059,7 +39136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1652484411
 MonoBehaviour:
@@ -39556,7 +39632,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1696332214
 MonoBehaviour:
@@ -39926,7 +40001,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1711381421
 MonoBehaviour:
@@ -40136,7 +40210,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1714871014
 MonoBehaviour:
@@ -40352,7 +40425,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1725464433
 MonoBehaviour:
@@ -40964,7 +41036,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 579583346}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1767076335
 Animator:
@@ -41161,7 +41232,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1773978234
 MonoBehaviour:
@@ -41473,7 +41543,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1795287724
 Animator:
@@ -41648,7 +41717,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 1
   isPersistent: 0
 --- !u!95 &1798077309
 Animator:
@@ -41907,7 +41975,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1801179836
 MonoBehaviour:
@@ -42221,7 +42288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 1
 --- !u!114 &1804641710
 MonoBehaviour:
@@ -42972,7 +43038,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1833129650
 MonoBehaviour:
@@ -43210,7 +43275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1836477429
 MonoBehaviour:
@@ -43548,7 +43612,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 1
 --- !u!61 &1841013309
 BoxCollider2D:
@@ -43749,7 +43812,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1841289256
 Animator:
@@ -44057,7 +44119,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1842399198
 Animator:
@@ -44422,7 +44483,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1857160031
 MonoBehaviour:
@@ -45201,7 +45261,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1888800486
 Animator:
@@ -45417,7 +45476,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!61 &1890690832
 BoxCollider2D:
@@ -45647,7 +45705,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1896515160
 MonoBehaviour:
@@ -45915,7 +45972,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1902156040
 MonoBehaviour:
@@ -46124,7 +46180,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1906182922
 MonoBehaviour:
@@ -46328,7 +46383,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1913469120
 Animator:
@@ -46678,7 +46732,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1935424576
 Animator:
@@ -46948,7 +47001,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1940723197
 Animator:
@@ -47164,7 +47216,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!61 &1946152751
 BoxCollider2D:
@@ -47394,7 +47445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &1954781983
 MonoBehaviour:
@@ -47934,7 +47984,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 1
 --- !u!114 &1981182464
 MonoBehaviour:
@@ -48164,7 +48213,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1992038456
 Animator:
@@ -48365,7 +48413,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!95 &1993097012
 Animator:
@@ -49268,7 +49315,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &2032069915
 Animator:
@@ -49652,7 +49698,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  flip: 0
   isPersistent: 0
 --- !u!61 &2044847749
 BoxCollider2D:
@@ -49882,7 +49927,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2045367706
 MonoBehaviour:
@@ -50072,7 +50116,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2045928064
 MonoBehaviour:
@@ -50522,7 +50565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2056958523
 MonoBehaviour:
@@ -50807,7 +50849,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &2064974823
 Animator:
@@ -50983,7 +51024,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2066150896
 MonoBehaviour:
@@ -51353,7 +51393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2074795008
 MonoBehaviour:
@@ -51736,7 +51775,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2088985594
 MonoBehaviour:
@@ -52176,7 +52214,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2107729636
 MonoBehaviour:
@@ -52436,7 +52473,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2111770814
 MonoBehaviour:
@@ -52673,7 +52709,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2122990637
 MonoBehaviour:
@@ -52876,7 +52911,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2129719707
 MonoBehaviour:
@@ -53187,7 +53221,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 758604517}
-  flip: 0
   isPersistent: 0
 --- !u!61 &2140996569
 BoxCollider2D:
@@ -53403,7 +53436,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  flip: 0
   isPersistent: 0
 --- !u!95 &2141650209
 Animator:
@@ -53654,7 +53686,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  flip: 0
   isPersistent: 0
 --- !u!114 &2142511008
 MonoBehaviour:
@@ -53892,7 +53923,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &870638979599275315
 MonoBehaviour:
@@ -54368,7 +54398,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &870638980067818519
 MonoBehaviour:
@@ -54571,7 +54600,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &870638980262237170
 Animator:
@@ -54804,7 +54832,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &870638980356744469
 Animator:
@@ -55059,7 +55086,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &870638981039147433
 Animator:
@@ -55335,7 +55361,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &870638981073886965
 Animator:
@@ -55793,7 +55818,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!1 &870638981608322731
 GameObject:
@@ -56003,7 +56027,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!224 &870638981674578788
 RectTransform:
@@ -56274,7 +56297,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &3555005647146135801
 Animator:
@@ -56690,7 +56712,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &3555005648810112562
 MonoBehaviour:
@@ -56951,7 +56972,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!95 &3555005649140906550
 Animator:
@@ -57024,7 +57044,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &3555005649179059409
 MonoBehaviour:
@@ -57614,7 +57633,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!1 &5801440697594813315
 GameObject:
@@ -57651,7 +57669,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &5801440697594813333
 Animator:
@@ -57841,7 +57858,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &5801440698267455573
 Animator:
@@ -58320,7 +58336,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!95 &5801440698602011001
 Animator:
@@ -58737,7 +58752,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!1 &7032827189031025523
 GameObject:
@@ -58817,7 +58831,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &7032827189067034215
 MonoBehaviour:
@@ -58958,7 +58971,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &7032827189406829379
 MonoBehaviour:
@@ -59127,7 +59139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &7032827189656338098
 MonoBehaviour:
@@ -59338,7 +59349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &7032827189765085885
 MonoBehaviour:
@@ -59582,7 +59592,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!1 &7032827189822558395
 GameObject:
@@ -59634,7 +59643,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  flip: 0
   isPersistent: 0
 --- !u!114 &7032827189985380014
 MonoBehaviour:
@@ -59942,7 +59950,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  flip: 0
   isPersistent: 0
 --- !u!114 &7032827190140424452
 MonoBehaviour:

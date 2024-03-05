@@ -21,37 +21,35 @@ public class Checker : MonoBehaviour
     [SerializeField] private bool top_Left = true;
 
     [Header("Disabled Letter")]
-    [SerializeField] private DisabledLetterController disabledLetterController;
-    [SerializeField] private bool mySpecialLetterCheck = false;
     [SerializeField] private GameObject[] mySpecialLetter;
-    [SerializeField] private int numberOfLetterToSpawn = 0;
 
     [Header("Dictionary")]
     [SerializeField] private ReadFromJSON readFromJSON;
 
+    [Header("Normal Word Collection")]
+
+
     [HideInInspector]
     public LetterCollectionAnimation letterCollectionAnimation;
 
+
+    [HideInInspector] public List<LetterCollectionAnimation> letterCollectionAnimationFromHit = new List<LetterCollectionAnimation>();
+    [HideInInspector] public string wordCompleted = null;
+
     //Hit Storage Area
     private List<GameObject> objectHit = new List<GameObject>();
-
-    [HideInInspector]
-    public List<LetterCollectionAnimation> letterCollectionAnimationFromHit = new List<LetterCollectionAnimation>();
     
     private void Start()
     { 
         winManager.win_Counter += 1;
         letterCollectionAnimation = GetComponentInChildren<LetterCollectionAnimation>();
 
-        if (mySpecialLetterCheck)
+        foreach (GameObject g in mySpecialLetter)
         {
-            foreach (GameObject g in mySpecialLetter)
-            {
-                if (g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = false;
-                else g.GetComponentInChildren<TMP_Text>().enabled = false;
-                if(g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = false;
-                if(g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = false;
-            }
+            if (g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = false;
+            else g.GetComponentInChildren<TMP_Text>().enabled = false;
+            if (g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = false;
+            if (g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
@@ -235,7 +233,8 @@ public class Checker : MonoBehaviour
                 winManager.win_Counter -= 1;
                 winManager.checkers.Add(this);
                 winManager.AnimationRoutineCaller();
-
+                
+                wordCompleted = l.Key;
                 Debug.Log(l.Key);
 
                 readFromJSON.commonWordsList.Remove(l.Key);
@@ -257,24 +256,13 @@ public class Checker : MonoBehaviour
 
     public void LetterEnablerCheck()
     {
-        if(mySpecialLetterCheck)
+        foreach (GameObject g in mySpecialLetter)
         {
-            foreach(GameObject g in mySpecialLetter)
-            {
-                if(g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = true;
-                else g.GetComponentInChildren<TMP_Text>().enabled = true;
-                if (g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = true;
-                if (g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = true;
-            }
+            if (g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = true;
+            else g.GetComponentInChildren<TMP_Text>().enabled = true;
+            if (g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = true;
+            if (g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = true;
         }
-        else
-        {
-            for (int i = 0; i <= numberOfLetterToSpawn; i++)
-            {
-                if (disabledLetterController != null) disabledLetterController.EnableLetter();
-            }
-        }
-
     }
 
     private float AngleNormalize(float angle)

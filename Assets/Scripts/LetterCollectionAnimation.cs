@@ -8,7 +8,7 @@ public class LetterCollectionAnimation : MonoBehaviour
     [HideInInspector] public bool isPlaying = false;
 
     [SerializeField] private Transform newPosition;
-    [SerializeField] private bool flip = false;
+    //[SerializeField] private bool flip = false;
 
     public bool isPersistent;
 
@@ -16,15 +16,12 @@ public class LetterCollectionAnimation : MonoBehaviour
     private LetterRotation letterRotation;
     private LetterRotation_8 LetterRotation_8;
     private RectTransform rectTransform;
-    private GameObject parent;
 
     private void Start()
     {
-        parent = transform.parent.gameObject;
         animator = GetComponent<Animator>();
 
-        if(flip == false)  letterRotation = GetComponent<LetterRotation>();
-        else letterRotation = parent.GetComponent<LetterRotation>();
+        letterRotation = GetComponent<LetterRotation>();
 
         LetterRotation_8 = GetComponent<LetterRotation_8>();
 
@@ -45,13 +42,13 @@ public class LetterCollectionAnimation : MonoBehaviour
                 newLetter.transform.SetParent(thisLetter.transform.parent);
                 isPersistent = false;
             }
-            if (flip)
+/*            if (flip)
             {
                 GameObject thisLetter2 = transform.gameObject;
                 TMP_Text text = thisLetter2.GetComponent<TMP_Text>();
                 if (text != null) { text.isRightToLeftText = true; }
                 flip = false;
-            }
+            }*/
             if(letterRotation != null) letterRotation.enabled = false;
             if(LetterRotation_8 != null) LetterRotation_8.enabled = false;
 

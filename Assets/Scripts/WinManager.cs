@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 
 public class WinManager : MonoBehaviour
@@ -14,6 +15,7 @@ public class WinManager : MonoBehaviour
     [SerializeField] private Transform[] newPositions;
 
     [SerializeField] private GameObject winScreen;
+    [SerializeField] private GameObject completeWord;
 
     private bool moveToPosition = false;
     private int levelCounter = 1;
@@ -83,6 +85,12 @@ public class WinManager : MonoBehaviour
                 checkers[0].GetComponentInChildren<LetterCollectionAnimation>().isPlaying = true;
             }
             foreach (LetterCollectionAnimation l in checkers[0].letterCollectionAnimationFromHit) { l.isPlaying = true; }
+
+            GameObject completedWord_New = Instantiate(completeWord, checkers[0].transform.position, checkers[0].transform.rotation);
+            completedWord_New.transform.SetParent(checkers[0].transform.parent);
+            completedWord_New.GetComponent<TMP_Text>().text = checkers[0].wordCompleted;
+           
+            checkers[0].wordCompleted = null;
             await Task.Yield();
         }
 
