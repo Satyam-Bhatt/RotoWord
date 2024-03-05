@@ -117,12 +117,12 @@ public class WinManager : MonoBehaviour
 
         if (checkers.Count > 0)
         {
-            checkers[0].wordCompleted = null; // necessary??
+            if (checkers[0].levelFinishLetterFound)
+            {
+                checkers[0].LetterEnablerCheck(); // For Disabled Letters
+                checkers[0].DestroyThis();
+            }
             
-            if (checkers[0].levelFinishLetterFound) checkers[0].DestroyThis();
-            checkers[0].levelFinishLetterFound = false; // necessary????
-            
-            checkers[0].LetterEnablerCheck(); // For Disabled Letters
             checkers.Remove(checkers[0]);
             AnimationRoutineCaller();
         }

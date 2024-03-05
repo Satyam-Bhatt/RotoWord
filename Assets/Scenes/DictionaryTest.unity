@@ -421,7 +421,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 1
 --- !u!114 &26645860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,7 +613,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 758604517}
-  isPersistent: 0
 --- !u!95 &26769709
 Animator:
   serializedVersion: 5
@@ -959,7 +957,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &27293599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,7 +1075,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &38906331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1499,7 +1495,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &50899772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,7 +1682,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &52711809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1944,7 +1938,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 0
 --- !u!114 &62539151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2307,7 +2300,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!95 &72535900
 Animator:
   serializedVersion: 5
@@ -2629,7 +2621,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!61 &73774991
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2941,7 +2932,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 1
 --- !u!95 &90674292
 Animator:
   serializedVersion: 5
@@ -3156,7 +3146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &93192102
 Animator:
   serializedVersion: 5
@@ -3379,7 +3368,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 1
 --- !u!114 &96792285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3615,7 +3603,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 1
 --- !u!95 &123191166
 Animator:
   serializedVersion: 5
@@ -3816,7 +3803,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 1
 --- !u!114 &123397081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4031,7 +4017,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &132031888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4260,7 +4245,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &133981303
 Animator:
   serializedVersion: 5
@@ -4952,7 +4936,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 0
 --- !u!114 &158353857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5361,7 +5344,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 0
 --- !u!114 &170254253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5564,7 +5546,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 1
 --- !u!95 &201017307
 Animator:
   serializedVersion: 5
@@ -5883,7 +5864,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &213175736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6151,7 +6131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &228509391
 Animator:
   serializedVersion: 5
@@ -6366,7 +6345,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!61 &228732834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7073,7 +7051,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!61 &250435209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7399,7 +7376,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &263833882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7738,7 +7714,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &279916584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7973,7 +7948,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 0
 --- !u!114 &281064503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8527,7 +8501,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 1
 --- !u!61 &307830860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8844,7 +8817,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!95 &325065554
 Animator:
   serializedVersion: 5
@@ -9065,7 +9037,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!114 &333995435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9270,7 +9241,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!61 &345582193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9572,7 +9542,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &351864995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10095,7 +10064,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &372201572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10312,7 +10280,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &372928748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10515,7 +10482,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!95 &377084178
 Animator:
   serializedVersion: 5
@@ -10784,7 +10750,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!61 &384202194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11226,7 +11191,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!95 &412164088
 Animator:
   serializedVersion: 5
@@ -11426,7 +11390,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &413174033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11695,7 +11658,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!61 &419907035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11904,7 +11866,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &424907386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12127,7 +12088,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!61 &424970084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12342,7 +12302,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!61 &431383530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12630,7 +12589,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &440262383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12943,7 +12901,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 1
 --- !u!114 &455981956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13304,7 +13261,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &461986737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13601,7 +13557,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 0
 --- !u!114 &479115462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14126,7 +14081,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!114 &509494069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14315,7 +14269,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!114 &516825214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14591,7 +14544,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &521747332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15030,7 +14982,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &549451222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15233,7 +15184,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 1
 --- !u!95 &550805731
 Animator:
   serializedVersion: 5
@@ -15433,7 +15383,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!114 &554147270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15774,7 +15723,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!61 &566377012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16003,7 +15951,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &578066625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16797,7 +16744,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 1
 --- !u!114 &612290399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17012,7 +16958,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 1
 --- !u!114 &615374050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17842,7 +17787,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 0
 --- !u!114 &649662982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18388,7 +18332,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &692203842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18556,7 +18499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 1
 --- !u!114 &698904324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19062,7 +19004,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 0
 --- !u!95 &717906851
 Animator:
   serializedVersion: 5
@@ -19357,7 +19298,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &735773815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19573,7 +19513,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &748783655
 Animator:
   serializedVersion: 5
@@ -19863,7 +19802,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!61 &752720021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20116,7 +20054,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &764677204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20332,7 +20269,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 1
 --- !u!114 &776404062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20553,7 +20489,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!61 &777412098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20882,7 +20817,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &782834095
 Animator:
   serializedVersion: 5
@@ -21218,7 +21152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &784575471
 Animator:
   serializedVersion: 5
@@ -21421,7 +21354,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 1
 --- !u!61 &795713646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21747,7 +21679,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &806439030
 Animator:
   serializedVersion: 5
@@ -21947,7 +21878,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &839121873
 Animator:
   serializedVersion: 5
@@ -22349,7 +22279,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &864598578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22537,7 +22466,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &867749718
 Animator:
   serializedVersion: 5
@@ -22759,7 +22687,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 1
 --- !u!114 &874314182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22952,7 +22879,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 0
 --- !u!114 &876774018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23206,7 +23132,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &904925590
 Animator:
   serializedVersion: 5
@@ -23381,7 +23306,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &907038834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23914,7 +23838,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!61 &944430600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24142,7 +24065,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &953962195
 Animator:
   serializedVersion: 5
@@ -24317,7 +24239,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!114 &970229668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24716,7 +24637,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 0
 --- !u!114 &994241801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24975,7 +24895,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &1015326885
 Animator:
   serializedVersion: 5
@@ -25530,7 +25449,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &1038718303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25733,7 +25651,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &1046574714
 Animator:
   serializedVersion: 5
@@ -26052,7 +25969,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &1050994808
 Animator:
   serializedVersion: 5
@@ -26546,7 +26462,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &1072059853
 Animator:
   serializedVersion: 5
@@ -26760,7 +26675,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &1072952999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27067,7 +26981,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &1089182757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27256,7 +27169,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &1091467912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27537,7 +27449,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &1106550622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27993,7 +27904,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 758604517}
-  isPersistent: 0
 --- !u!61 &1145243534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28193,7 +28103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 0
 --- !u!114 &1146090030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28396,7 +28305,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!61 &1146658077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28663,7 +28571,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 1
 --- !u!114 &1158261891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28996,7 +28903,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &1167000435
 Animator:
   serializedVersion: 5
@@ -29219,7 +29125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 1
 --- !u!114 &1184687874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29520,7 +29425,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!95 &1188899217
 Animator:
   serializedVersion: 5
@@ -30209,7 +30113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 1
 --- !u!95 &1213530293
 Animator:
   serializedVersion: 5
@@ -30457,7 +30360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 1
 --- !u!114 &1222003727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30671,7 +30573,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &1223717716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31093,7 +30994,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &1294477586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31331,7 +31231,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &1297515318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31666,7 +31565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 1
 --- !u!114 &1303205748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31888,7 +31786,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 1
 --- !u!61 &1307795948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32117,7 +32014,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!95 &1316744662
 Animator:
   serializedVersion: 5
@@ -32332,7 +32228,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 1
 --- !u!95 &1322467867
 Animator:
   serializedVersion: 5
@@ -32577,7 +32472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!95 &1351834446
 Animator:
   serializedVersion: 5
@@ -32832,7 +32726,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &1367364580
 Animator:
   serializedVersion: 5
@@ -33028,7 +32921,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 0
 --- !u!114 &1367458957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33474,7 +33366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!61 &1417122287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33736,7 +33627,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 1
 --- !u!95 &1424810153
 Animator:
   serializedVersion: 5
@@ -34232,7 +34122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!95 &1451729921
 Animator:
   serializedVersion: 5
@@ -34736,7 +34625,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &1475185952
 Animator:
   serializedVersion: 5
@@ -35012,7 +34900,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 1
 --- !u!114 &1479889927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35309,7 +35196,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!61 &1488990789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36097,7 +35983,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &1541112203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36306,7 +36191,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!114 &1546237460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36778,7 +36662,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!114 &1581630418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37178,7 +37061,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &1605951332
 Animator:
   serializedVersion: 5
@@ -37393,7 +37275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 1
 --- !u!95 &1606578324
 Animator:
   serializedVersion: 5
@@ -37608,7 +37489,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 1
 --- !u!95 &1621278927
 Animator:
   serializedVersion: 5
@@ -37809,7 +37689,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 1
 --- !u!114 &1623399443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38038,7 +37917,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 1
 --- !u!61 &1627743948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38267,7 +38145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &1629987965
 Animator:
   serializedVersion: 5
@@ -38521,7 +38398,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!114 &1649163729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38813,7 +38689,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &1652484411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39309,7 +39184,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &1696332214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39678,7 +39552,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &1711381421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39887,7 +39760,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1206380996}
-  isPersistent: 0
 --- !u!114 &1714871014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40102,7 +39974,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &1725464433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40713,7 +40584,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 579583346}
-  isPersistent: 0
 --- !u!95 &1767076335
 Animator:
   serializedVersion: 5
@@ -40909,7 +40779,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 0
 --- !u!114 &1773978234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41220,7 +41089,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &1795287724
 Animator:
   serializedVersion: 5
@@ -41394,7 +41262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &1798077309
 Animator:
   serializedVersion: 5
@@ -41652,7 +41519,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 0
 --- !u!114 &1801179836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41965,7 +41831,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 1
 --- !u!114 &1804641710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42715,7 +42580,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &1833129650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42952,7 +42816,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &1836477429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43289,7 +43152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 1
 --- !u!61 &1841013309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43489,7 +43351,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &1841289256
 Animator:
   serializedVersion: 5
@@ -43796,7 +43657,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &1842399198
 Animator:
   serializedVersion: 5
@@ -44160,7 +44020,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &1857160031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44938,7 +44797,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 0
 --- !u!95 &1888800486
 Animator:
   serializedVersion: 5
@@ -45153,7 +45011,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!61 &1890690832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45382,7 +45239,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &1896515160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45649,7 +45505,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &1902156040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45857,7 +45712,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 260739828}
-  isPersistent: 0
 --- !u!114 &1906182922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46060,7 +45914,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &1913469120
 Animator:
   serializedVersion: 5
@@ -46409,7 +46262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &1935424576
 Animator:
   serializedVersion: 5
@@ -46678,7 +46530,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &1940723197
 Animator:
   serializedVersion: 5
@@ -46893,7 +46744,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!61 &1946152751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47122,7 +46972,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &1954781983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47661,7 +47510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 1
 --- !u!114 &1981182464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47890,7 +47738,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &1992038456
 Animator:
   serializedVersion: 5
@@ -48090,7 +47937,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!95 &1993097012
 Animator:
   serializedVersion: 5
@@ -48992,7 +48838,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &2032069915
 Animator:
   serializedVersion: 5
@@ -49375,7 +49220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1250786344}
-  isPersistent: 0
 --- !u!61 &2044847749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49604,7 +49448,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &2045367706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49793,7 +49636,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &2045928064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50242,7 +50084,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &2056958523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50526,7 +50367,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &2064974823
 Animator:
   serializedVersion: 5
@@ -50701,7 +50541,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!114 &2066150896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51070,7 +50909,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &2074795008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51452,7 +51290,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &2088985594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51891,7 +51728,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &2107729636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52150,7 +51986,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!114 &2111770814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52386,7 +52221,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1291306721}
-  isPersistent: 0
 --- !u!114 &2122990637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52588,7 +52422,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &2129719707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52898,7 +52731,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 758604517}
-  isPersistent: 0
 --- !u!61 &2140996569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53113,7 +52945,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 89763743}
-  isPersistent: 0
 --- !u!95 &2141650209
 Animator:
   serializedVersion: 5
@@ -53363,7 +53194,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 0}
-  isPersistent: 0
 --- !u!114 &2142511008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53600,7 +53430,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &870638979599275315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54075,7 +53904,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &870638980067818519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54277,7 +54105,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &870638980262237170
 Animator:
   serializedVersion: 5
@@ -54509,7 +54336,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &870638980356744469
 Animator:
   serializedVersion: 5
@@ -54763,7 +54589,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &870638981039147433
 Animator:
   serializedVersion: 5
@@ -55038,7 +54863,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &870638981073886965
 Animator:
   serializedVersion: 5
@@ -55495,7 +55319,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!1 &870638981608322731
 GameObject:
   m_ObjectHideFlags: 0
@@ -55704,7 +55527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!224 &870638981674578788
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56071,7 +55893,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &3555005647146135801
 Animator:
   serializedVersion: 5
@@ -56486,7 +56307,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &3555005648810112562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56746,7 +56566,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!95 &3555005649140906550
 Animator:
   serializedVersion: 5
@@ -56818,7 +56637,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &3555005649179059409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57407,7 +57225,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!1 &5801440697594813315
 GameObject:
   m_ObjectHideFlags: 0
@@ -57443,7 +57260,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &5801440697594813333
 Animator:
   serializedVersion: 5
@@ -57632,7 +57448,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &5801440698267455573
 Animator:
   serializedVersion: 5
@@ -58110,7 +57925,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!95 &5801440698602011001
 Animator:
   serializedVersion: 5
@@ -58526,7 +58340,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!1 &7032827189031025523
 GameObject:
   m_ObjectHideFlags: 0
@@ -58605,7 +58418,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &7032827189067034215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58745,7 +58557,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &7032827189406829379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58913,7 +58724,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &7032827189656338098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59123,7 +58933,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &7032827189765085885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59366,7 +59175,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!1 &7032827189822558395
 GameObject:
   m_ObjectHideFlags: 0
@@ -59417,7 +59225,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 1332295315}
-  isPersistent: 0
 --- !u!114 &7032827189985380014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59724,7 +59531,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlaying: 0
   newPosition: {fileID: 265318683}
-  isPersistent: 0
 --- !u!114 &7032827190140424452
 MonoBehaviour:
   m_ObjectHideFlags: 0

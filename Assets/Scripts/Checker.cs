@@ -48,6 +48,7 @@ public class Checker : MonoBehaviour
             else g.GetComponentInChildren<TMP_Text>().enabled = false;
             if (g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = false;
             if (g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = false;
+            else g.GetComponentInChildren<BoxCollider2D>().enabled = false;
         }
     }
 
@@ -258,17 +259,21 @@ public class Checker : MonoBehaviour
         { 
             Destroy(o); 
         }
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
     public void LetterEnablerCheck()
     {
         foreach (GameObject g in mySpecialLetter)
         {
-            if (g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = true;
-            else g.GetComponentInChildren<TMP_Text>().enabled = true;
-            if (g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = true;
-            if (g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = true;
+            if (g != null)
+            {
+                if (g.GetComponent<TMP_Text>() != null) g.GetComponent<TMP_Text>().enabled = true;
+                else g.GetComponentInChildren<TMP_Text>().enabled = true;
+                if (g.GetComponent<Checker>() != null) g.GetComponent<Checker>().enabled = true;
+                if (g.GetComponent<BoxCollider2D>() != null) g.GetComponent<BoxCollider2D>().enabled = true;
+                else g.GetComponentInChildren<BoxCollider2D>().enabled = true;
+            }
         }
     }
 
