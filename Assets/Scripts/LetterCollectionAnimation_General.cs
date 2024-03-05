@@ -19,6 +19,7 @@ public class LetterCollectionAnimation_General : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(newPosition_General == null) return;
 
          _rectTransform_General.pivot = new Vector2(0.5f, 0.0f);
         transform.position = Vector2.Lerp(transform.position, newPosition_General.position, 5 * Time.deltaTime);
@@ -29,7 +30,5 @@ public class LetterCollectionAnimation_General : MonoBehaviour
         {
             _anim_General.SetBool("shouldShrink", true);
         }
-
-
     }
 }

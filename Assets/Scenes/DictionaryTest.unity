@@ -974,206 +974,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPresent_1st_3rd_Quadrant: 0
   parent: {fileID: 2038270630}
---- !u!1 &33968653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 33968654}
-  - component: {fileID: 33968659}
-  - component: {fileID: 33968658}
-  - component: {fileID: 33968657}
-  - component: {fileID: 33968656}
-  - component: {fileID: 33968655}
-  m_Layer: 5
-  m_Name: PF_Word
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &33968654
+--- !u!224 &33968654 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+  m_PrefabInstance: {fileID: 3473108989961916315}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33968653}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1270059014}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &33968655
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33968653}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &33968656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33968653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff1336811f3f9c4d80385138074a8b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlaying: 0
-  newPosition: {fileID: 260739828}
-  isPersistent: 0
---- !u!95 &33968657
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33968653}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a1caf16ddb8155145b6a0eda60c5080b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &33968658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33968653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 1.31
-  m_fontSizeBase: 1.31
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &33968659
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33968653}
-  m_CullTransparentMesh: 1
 --- !u!1 &36162772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,13 +1057,11 @@ MonoBehaviour:
   parent: {fileID: 11263703}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: -1
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &38906330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,14 +1288,12 @@ MonoBehaviour:
   parent: {fileID: 440649531}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 725677277}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &47105373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3028,13 +2829,11 @@ MonoBehaviour:
   parent: {fileID: 2014398315}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &89763742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,13 +3532,11 @@ MonoBehaviour:
   parent: {fileID: 244718171}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &123191162
 GameObject:
   m_ObjectHideFlags: 0
@@ -5464,13 +5261,11 @@ MonoBehaviour:
   parent: {fileID: 153278982}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &165085541
 GameObject:
   m_ObjectHideFlags: 0
@@ -5530,13 +5325,11 @@ MonoBehaviour:
   parent: {fileID: 440649531}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &170254250
 GameObject:
   m_ObjectHideFlags: 0
@@ -6172,13 +5965,11 @@ MonoBehaviour:
   parent: {fileID: 11263703}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!95 &213175737
 Animator:
   serializedVersion: 5
@@ -6356,13 +6147,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &228509387
 GameObject:
   m_ObjectHideFlags: 0
@@ -6956,13 +6745,11 @@ MonoBehaviour:
   parent: {fileID: 1086356126}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &243260792
 GameObject:
   m_ObjectHideFlags: 0
@@ -7278,13 +7065,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &250435206
 GameObject:
   m_ObjectHideFlags: 0
@@ -7575,13 +7360,11 @@ MonoBehaviour:
   parent: {fileID: 2019411258}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &263833878
 GameObject:
   m_ObjectHideFlags: 0
@@ -7645,13 +7428,11 @@ MonoBehaviour:
   parent: {fileID: 231867629}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 1516600598}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &263833881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8411,13 +8192,11 @@ MonoBehaviour:
   parent: {fileID: 1191095076}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &292179561
 GameObject:
   m_ObjectHideFlags: 0
@@ -10065,13 +9844,11 @@ MonoBehaviour:
   parent: {fileID: 783107854}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &364402211
 GameObject:
   m_ObjectHideFlags: 0
@@ -10131,13 +9908,11 @@ MonoBehaviour:
   parent: {fileID: 2019411258}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &369584265
 GameObject:
   m_ObjectHideFlags: 0
@@ -10197,14 +9972,12 @@ MonoBehaviour:
   parent: {fileID: 2019411258}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1385716579}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &370451001
 GameObject:
   m_ObjectHideFlags: 0
@@ -10558,13 +10331,11 @@ MonoBehaviour:
   parent: {fileID: 231867629}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 1516600598}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &372928747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11237,14 +11008,12 @@ MonoBehaviour:
   parent: {fileID: 440649531}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1993513244}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &390135963
 GameObject:
   m_ObjectHideFlags: 0
@@ -11846,13 +11615,11 @@ MonoBehaviour:
   parent: {fileID: 2019411258}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!224 &417416416
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12132,13 +11899,11 @@ MonoBehaviour:
   parent: {fileID: 11263703}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 2
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &424907385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12795,13 +12560,11 @@ MonoBehaviour:
   parent: {fileID: 153278982}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &440262379
 GameObject:
   m_ObjectHideFlags: 0
@@ -13414,13 +13177,11 @@ MonoBehaviour:
   parent: {fileID: 231867629}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 1516600598}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!95 &461986733
 Animator:
   serializedVersion: 5
@@ -14167,17 +13928,15 @@ MonoBehaviour:
   parent: {fileID: 2019411258}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1707539594}
   - {fileID: 1015326882}
   - {fileID: 636433106}
   - {fileID: 1488990786}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &496560265
 GameObject:
   m_ObjectHideFlags: 0
@@ -16231,13 +15990,11 @@ MonoBehaviour:
   parent: {fileID: 231867629}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 1516600598}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &578066624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16527,13 +16284,11 @@ MonoBehaviour:
   parent: {fileID: 2014398315}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &586234624
 GameObject:
   m_ObjectHideFlags: 0
@@ -17602,13 +17357,11 @@ MonoBehaviour:
   parent: {fileID: 1086356126}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &636433106
 GameObject:
   m_ObjectHideFlags: 0
@@ -17668,15 +17421,13 @@ MonoBehaviour:
   parent: {fileID: 2019411258}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 262254143}
   - {fileID: 1627743944}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &641344314
 GameObject:
   m_ObjectHideFlags: 0
@@ -17736,14 +17487,12 @@ MonoBehaviour:
   parent: {fileID: 440649531}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 165085541}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &641360966
 GameObject:
   m_ObjectHideFlags: 0
@@ -18021,8 +17770,6 @@ MonoBehaviour:
   parent: {fileID: 5801440698398297623}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 5801440696678832012}
   - {fileID: 5801440696987842059}
@@ -18036,10 +17783,10 @@ MonoBehaviour:
   - {fileID: 1367458953}
   - {fileID: 1801179832}
   - {fileID: 1773978230}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &649662979
 GameObject:
   m_ObjectHideFlags: 0
@@ -18525,17 +18272,15 @@ MonoBehaviour:
   parent: {fileID: 783107854}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1278627074}
   - {fileID: 2140996566}
   - {fileID: 777412095}
   - {fileID: 1451729917}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &692203837
 GameObject:
   m_ObjectHideFlags: 0
@@ -18599,13 +18344,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!95 &692203840
 Animator:
   serializedVersion: 5
@@ -19519,13 +19262,11 @@ MonoBehaviour:
   parent: {fileID: 440649531}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &735773811
 GameObject:
   m_ObjectHideFlags: 0
@@ -19589,13 +19330,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &735773814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19805,13 +19544,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &748783654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20744,13 +20481,11 @@ MonoBehaviour:
   parent: {fileID: 244718171}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &777412095
 GameObject:
   m_ObjectHideFlags: 0
@@ -21114,13 +20849,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &782834094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21450,13 +21183,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &784575470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22511,13 +22242,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &864598574
 GameObject:
   m_ObjectHideFlags: 0
@@ -22581,13 +22310,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &864598577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23985,13 +23712,11 @@ MonoBehaviour:
   parent: {fileID: 153278982}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &940298916
 GameObject:
   m_ObjectHideFlags: 0
@@ -25446,17 +25171,15 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 870638981039296141}
   - {fileID: 7032827189406829382}
   - {fileID: 870638981224066689}
   - {fileID: 7032827189067034219}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1018349439
 GameObject:
   m_ObjectHideFlags: 0
@@ -26736,13 +26459,11 @@ MonoBehaviour:
   parent: {fileID: 783107854}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1072059850
 GameObject:
   m_ObjectHideFlags: 0
@@ -27727,13 +27448,11 @@ MonoBehaviour:
   parent: {fileID: 2014398315}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1106550619
 GameObject:
   m_ObjectHideFlags: 0
@@ -28149,6 +27868,8 @@ MonoBehaviour:
   - {fileID: 2004115336}
   - {fileID: 70061056}
   winScreen: {fileID: 985398865}
+  completeWord: {fileID: 3473108989995326870, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+  placeWhereTheWordGoes: {fileID: 265318683}
 --- !u!114 &1139151383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28851,13 +28572,11 @@ MonoBehaviour:
   parent: {fileID: 783107854}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1158261888
 GameObject:
   m_ObjectHideFlags: 0
@@ -29629,13 +29348,11 @@ MonoBehaviour:
   parent: {fileID: 244718171}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1184811923
 GameObject:
   m_ObjectHideFlags: 0
@@ -29695,13 +29412,11 @@ MonoBehaviour:
   parent: {fileID: 1191095076}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1188899213
 GameObject:
   m_ObjectHideFlags: 0
@@ -31322,13 +31037,11 @@ MonoBehaviour:
   parent: {fileID: 783107854}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1291306720
 GameObject:
   m_ObjectHideFlags: 0
@@ -31570,13 +31283,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1297515314
 GameObject:
   m_ObjectHideFlags: 0
@@ -32148,13 +31859,11 @@ MonoBehaviour:
   parent: {fileID: 244718171}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1307795945
 GameObject:
   m_ObjectHideFlags: 0
@@ -33078,14 +32787,12 @@ MonoBehaviour:
   parent: {fileID: 440649531}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1819272974}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1367364576
 GameObject:
   m_ObjectHideFlags: 0
@@ -33563,13 +33270,11 @@ MonoBehaviour:
   parent: {fileID: 2019411258}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!224 &1385716581
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34478,13 +34183,11 @@ MonoBehaviour:
   parent: {fileID: 1191095076}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1451729917
 GameObject:
   m_ObjectHideFlags: 0
@@ -34864,13 +34567,11 @@ MonoBehaviour:
   parent: {fileID: 2014398315}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1470413912
 GameObject:
   m_ObjectHideFlags: 0
@@ -35553,8 +35254,6 @@ MonoBehaviour:
   parent: {fileID: 1086356126}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1827306205}
   - {fileID: 2008200415}
@@ -35572,10 +35271,10 @@ MonoBehaviour:
   - {fileID: 1581630415}
   - {fileID: 73774987}
   - {fileID: 970229665}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1488990786
 GameObject:
   m_ObjectHideFlags: 0
@@ -36399,13 +36098,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1541112202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36800,13 +36497,11 @@ MonoBehaviour:
   parent: {fileID: 5801440698398297623}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1552933173
 GameObject:
   m_ObjectHideFlags: 0
@@ -38569,13 +38264,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1629987964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38782,13 +38475,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1649163726
 GameObject:
   m_ObjectHideFlags: 0
@@ -39439,13 +39130,11 @@ MonoBehaviour:
   parent: {fileID: 5801440698398297623}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1691047701
 GameObject:
   m_ObjectHideFlags: 0
@@ -39611,13 +39300,11 @@ MonoBehaviour:
   parent: {fileID: 231867629}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 1516600598}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1696332213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39925,18 +39612,16 @@ MonoBehaviour:
   parent: {fileID: 2019411258}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 364402211}
   - {fileID: 1913469116}
   - {fileID: 369584265}
   - {fileID: 1946152747}
   - {fileID: 417416414}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1711381418
 GameObject:
   m_ObjectHideFlags: 0
@@ -39980,13 +39665,11 @@ MonoBehaviour:
   parent: {fileID: 231867629}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 1516600598}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1711381420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40960,13 +40643,11 @@ MonoBehaviour:
   parent: {fileID: 1191095076}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1767076331
 GameObject:
   m_ObjectHideFlags: 0
@@ -42866,13 +42547,11 @@ MonoBehaviour:
   parent: {fileID: 440649531}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1827306205
 GameObject:
   m_ObjectHideFlags: 0
@@ -42932,13 +42611,11 @@ MonoBehaviour:
   parent: {fileID: 1086356126}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1831099569
 GameObject:
   m_ObjectHideFlags: 0
@@ -43017,13 +42694,11 @@ MonoBehaviour:
   parent: {fileID: 11263703}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1833129649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43254,13 +42929,11 @@ MonoBehaviour:
   parent: {fileID: 231867629}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 1516600598}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1836477428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44462,13 +44135,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1857160030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45684,13 +45355,11 @@ MonoBehaviour:
   parent: {fileID: 231867629}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 1516600598}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1896515159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45897,16 +45566,14 @@ MonoBehaviour:
   parent: {fileID: 5801440698398297623}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 648182219}
   - {fileID: 1725464430}
   - {fileID: 764677200}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1902156037
 GameObject:
   m_ObjectHideFlags: 0
@@ -45950,14 +45617,12 @@ MonoBehaviour:
   parent: {fileID: 11263703}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 38906328}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1902156039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47424,13 +47089,11 @@ MonoBehaviour:
   parent: {fileID: 11263703}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &1954781982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48617,13 +48280,11 @@ MonoBehaviour:
   parent: {fileID: 440649531}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &1998162665
 GameObject:
   m_ObjectHideFlags: 0
@@ -48848,13 +48509,11 @@ MonoBehaviour:
   parent: {fileID: 1086356126}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &2014398314
 GameObject:
   m_ObjectHideFlags: 0
@@ -49621,13 +49280,11 @@ MonoBehaviour:
   parent: {fileID: 153278982}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &2044847745
 GameObject:
   m_ObjectHideFlags: 0
@@ -49906,13 +49563,11 @@ MonoBehaviour:
   parent: {fileID: 11263703}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &2045367705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50587,13 +50242,11 @@ MonoBehaviour:
   parent: {fileID: 1857439067}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &2056958524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51754,13 +51407,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &2088985593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52193,13 +51844,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &2107729635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52406,17 +52055,15 @@ MonoBehaviour:
   parent: {fileID: 1086356126}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1486326335}
   - {fileID: 158353854}
   - {fileID: 377084174}
   - {fileID: 1714871011}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &2111770811
 GameObject:
   m_ObjectHideFlags: 0
@@ -52890,13 +52537,11 @@ MonoBehaviour:
   parent: {fileID: 11263703}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 158410441}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 1
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &2129719706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53644,13 +53289,11 @@ MonoBehaviour:
   parent: {fileID: 0}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 0}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!95 &2142511006
 Animator:
   serializedVersion: 5
@@ -54369,13 +54012,11 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!222 &870638980067818516
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54794,13 +54435,11 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 0
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &870638980335531663
 GameObject:
   m_ObjectHideFlags: 0
@@ -55065,13 +54704,11 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 0
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &870638981039147432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55319,13 +54956,11 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 0
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &870638981073886947
 GameObject:
   m_ObjectHideFlags: 0
@@ -55573,8 +55208,6 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1017235680}
   - {fileID: 521747326}
@@ -55582,10 +55215,10 @@ MonoBehaviour:
   - {fileID: 7032827189985380018}
   - {fileID: 870638981674578795}
   - {fileID: 7032827189656338102}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &870638981224066689
 GameObject:
   m_ObjectHideFlags: 0
@@ -55645,13 +55278,11 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &870638981608322720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56070,13 +55701,11 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 0
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &870638981674578795
 GameObject:
   m_ObjectHideFlags: 0
@@ -56136,17 +55765,15 @@ MonoBehaviour:
   parent: {fileID: 870638979733523319}
   RayExtender: 1
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 870638980335531663}
   - {fileID: 7032827189822558395}
   - {fileID: 870638981168960236}
   - {fileID: 7032827190017045972}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &870638981698288431
 GameObject:
   m_ObjectHideFlags: 0
@@ -56164,6 +55791,103 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &3473108989961916315
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1270059014}
+    m_Modifications:
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 8.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 6.654
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0000000079912414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999815
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.001922343
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.278
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.196
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326869, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473108989995326870, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
+      propertyPath: m_Name
+      value: PF_Word
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e22f3d4e3e699ca4d8fd22c641a5707e, type: 3}
 --- !u!1 &3555005647123711753
 GameObject:
   m_ObjectHideFlags: 0
@@ -57304,13 +57028,11 @@ MonoBehaviour:
   parent: {fileID: 5801440698398297623}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &5801440696678832012
 GameObject:
   m_ObjectHideFlags: 0
@@ -57370,16 +57092,14 @@ MonoBehaviour:
   parent: {fileID: 5801440698398297623}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1686043206}
   - {fileID: 2045928061}
   - {fileID: 440262379}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!224 &5801440696987842052
 RectTransform:
   m_ObjectHideFlags: 0
@@ -57422,13 +57142,11 @@ MonoBehaviour:
   parent: {fileID: 5801440698398297623}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 0
   mySpecialLetter: []
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!1 &5801440696987842059
 GameObject:
   m_ObjectHideFlags: 0
@@ -58188,16 +57906,14 @@ MonoBehaviour:
   parent: {fileID: 5801440698398297623}
   RayExtender: 0
   top_Left: 1
-  disabledLetterController: {fileID: 0}
-  mySpecialLetterCheck: 1
   mySpecialLetter:
   - {fileID: 1297515314}
   - {fileID: 944430597}
   - {fileID: 1549593539}
-  numberOfLetterToSpawn: 0
   readFromJSON: {fileID: 1139151385}
   letterCollectionAnimation: {fileID: 0}
   letterCollectionAnimationFromHit: []
+  wordCompleted: 
 --- !u!114 &5801440698497282008
 MonoBehaviour:
   m_ObjectHideFlags: 0

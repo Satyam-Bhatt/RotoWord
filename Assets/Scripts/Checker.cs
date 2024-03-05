@@ -26,9 +26,6 @@ public class Checker : MonoBehaviour
     [Header("Dictionary")]
     [SerializeField] private ReadFromJSON readFromJSON;
 
-    [Header("Normal Word Collection")]
-
-
     [HideInInspector]
     public LetterCollectionAnimation letterCollectionAnimation;
 
@@ -230,11 +227,11 @@ public class Checker : MonoBehaviour
         {
             if(l.Key == myText_Forward)
             {
+                wordCompleted = l.Key;
                 winManager.win_Counter -= 1;
                 winManager.checkers.Add(this);
                 winManager.AnimationRoutineCaller();
                 
-                wordCompleted = l.Key;
                 Debug.Log(l.Key);
 
                 readFromJSON.commonWordsList.Remove(l.Key);

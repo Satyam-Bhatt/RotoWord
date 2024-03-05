@@ -15,7 +15,10 @@ public class WinManager : MonoBehaviour
     [SerializeField] private Transform[] newPositions;
 
     [SerializeField] private GameObject winScreen;
-    [SerializeField] private GameObject completeWord;
+
+    [Header("Normal Word Collection")]
+    [SerializeField] public GameObject completeWord;
+    [SerializeField] private Transform placeWhereTheWordGoes;
 
     private bool moveToPosition = false;
     private int levelCounter = 1;
@@ -74,6 +77,18 @@ public class WinManager : MonoBehaviour
     {
         timeCounter = Time.time + 1.8f; //to control the amount of time next word comes and previous one is destroyed
         isRunning = true;
+
+        GameObject completedWord_New = Instantiate(completeWord, checkers[0].transform.position, checkers[0].transform.rotation);
+        
+        RectTransform rectTransform = checkers[0].GetComponent<RectTransform>();
+        completedWord_New.GetComponent<RectTransform>().position = rectTransform.position;
+        completedWord_New.GetComponent<RectTransform>().rotation = rectTransform.rotation;
+        completedWord_New.GetComponent<RectTransform>().sizeDelta = rectTransform.sizeDelta;
+        completedWord_New.GetComponent<RectTransform>().position = rectTransform.position;
+
+        completedWord_New.transform.SetParent(checkers[0].transform.parent);
+        completedWord_New.GetComponent<TMP_Text>().text = checkers[0].wordCompleted;
+
         while (Time.time < timeCounter)
         {
             if(checkers[0].letterCollectionAnimation != null)
@@ -86,16 +101,15 @@ public class WinManager : MonoBehaviour
             }
             foreach (LetterCollectionAnimation l in checkers[0].letterCollectionAnimationFromHit) { l.isPlaying = true; }
 
-            GameObject completedWord_New = Instantiate(completeWord, checkers[0].transform.position, checkers[0].transform.rotation);
-            completedWord_New.transform.SetParent(checkers[0].transform.parent);
-            completedWord_New.GetComponent<TMP_Text>().text = checkers[0].wordCompleted;
+            completedWord_New.GetComponent<LetterCollectionAnimation_General>().newPosition_General = placeWhereTheWordGoes;
            
-            checkers[0].wordCompleted = null;
+            
             await Task.Yield();
         }
 
         if (checkers.Count > 0)
         {
+           // checkers[0].wordCompleted = null;//necessary??
             checkers[0].LetterEnablerCheck();
             checkers[0].DestroyThis();
             checkers.Remove(checkers[0]);
