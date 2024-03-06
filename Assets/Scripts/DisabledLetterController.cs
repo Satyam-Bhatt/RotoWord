@@ -25,7 +25,7 @@ public class DisabledLetterController : MonoBehaviour
         {
             if(disabledLetters[index].GetComponent<TMP_Text>() != null) disabledLetters[index].GetComponent<TMP_Text>().enabled = true;
             else disabledLetters[index].GetComponentInChildren<TMP_Text>().enabled = true;
-            disabledLetters[index].GetComponent<Checker>().enabled = true;
+            if(disabledLetters[index].GetComponent<Checker>() != null) disabledLetters[index].GetComponent<Checker>().enabled = true;
 
             if(disabledLetters[index].GetComponent<BoxCollider2D>() != null) disabledLetters[index].GetComponent<BoxCollider2D>().enabled = true;
             else disabledLetters[index].GetComponentInChildren<BoxCollider2D>().enabled = true;
